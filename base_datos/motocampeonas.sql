@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-07-2022 a las 16:27:17
+-- Tiempo de generación: 03-07-2022 a las 18:39:16
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -47,9 +47,10 @@ INSERT INTO `categorias` (`ID_MODALIDAD`, `ID_CILINDRADA`, `ID_CATEGORIA`, `FECH
 ('Velocidad', 'Baja', 'Moto3', 2012, NULL),
 ('Velocidad', 'Alta', 'MotoGP', 2002, NULL),
 ('Motocross', 'Alta', 'MX1', 2004, 2013),
-('Motocross', 'Media', 'MX2', 2004, NULL),
-('Motocross', 'Baja', 'MX3', 2004, 2013),
+('Motocross', 'Baja', 'MX2', 2004, NULL),
+('Motocross', 'Alta', 'MX3', 2004, 2013),
 ('Motocross', 'Alta', 'MXGP', 2014, NULL),
+('Motocross', 'Alta', 'WMX', 2009, NULL),
 ('Velocidad', 'Alta', 'WorldSBK', 1988, NULL),
 ('Velocidad', 'Media', 'WorldSSP', 1999, NULL),
 ('Velocidad', 'Baja', 'WorldSSP300', 2017, NULL);
@@ -575,7 +576,33 @@ INSERT INTO `victorias` (`ID_VICTORIA`, `ID_CATEGORIA`, `ID_CLASIFICACION`, `ID_
 (481, '125cc', 'Pilotos', 1989, 'JJ Cobas'),
 (482, 'MotoGP', 'Pilotos', 1988, 'Yamaha'),
 (483, '250cc', 'Pilotos', 1988, 'Honda'),
-(484, '125cc', 'Pilotos', 1988, 'Derbi');
+(484, '125cc', 'Pilotos', 1988, 'Derbi'),
+(485, 'WMX', 'Constructores', 2009, 'KTM'),
+(486, 'WMX', 'Pilotos', 2009, 'KTM'),
+(487, 'WMX', 'Pilotos', 2010, 'KTM'),
+(488, 'WMX', 'Constructores', 2010, 'KTM'),
+(489, 'WMX', 'Constructores', 2011, 'KTM'),
+(490, 'WMX', 'Pilotos', 2011, 'KTM'),
+(491, 'WMX', 'Constructores', 2012, 'Yamaha'),
+(492, 'WMX', 'Pilotos', 2012, 'Yamaha'),
+(493, 'WMX', 'Constructores', 2013, 'Yamaha'),
+(494, 'WMX', 'Pilotos', 2013, 'Yamaha'),
+(497, 'WMX', 'Constructores', 2014, 'Kawasaki'),
+(498, 'WMX', 'Pilotos', 2014, 'Yamaha'),
+(499, 'WMX', 'Constructores', 2015, 'Yamaha'),
+(500, 'WMX', 'Pilotos', 2015, 'Yamaha'),
+(501, 'WMX', 'Constructores', 2016, 'Yamaha'),
+(502, 'WMX', 'Pilotos', 2016, 'Kawasaki'),
+(503, 'WMX', 'Constructores', 2017, 'Yamaha'),
+(504, 'WMX', 'Pilotos', 2017, 'Yamaha'),
+(505, 'WMX', 'Constructores', 2018, 'Yamaha'),
+(506, 'WMX', 'Pilotos', 2018, 'Yamaha'),
+(507, 'WMX', 'Constructores', 2019, 'Kawasaki'),
+(508, 'WMX', 'Pilotos', 2019, 'Kawasaki'),
+(509, 'WMX', 'Constructores', 2020, 'Yamaha'),
+(510, 'WMX', 'Pilotos', 2020, 'Kawasaki'),
+(511, 'WMX', 'Constructores', 2021, 'Kawasaki'),
+(512, 'WMX', 'Pilotos', 2021, 'Kawasaki');
 
 --
 -- Índices para tablas volcadas
@@ -664,7 +691,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `victorias`
 --
 ALTER TABLE `victorias`
-  MODIFY `ID_VICTORIA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=485;
+  MODIFY `ID_VICTORIA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=513;
 
 --
 -- Restricciones para tablas volcadas
