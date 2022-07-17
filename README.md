@@ -1,7 +1,7 @@
 # 1. [DEV] Aplicación ONLINE
 
 <p align="center">
-<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/"><img src="https://platform.sh/images/deploy/lg-blue.svg" alt="[DEV] Aplicación ONLINE en Platform.sh" width="180px" /></a>
+<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="180px" /></a>
 </p>
 
 # 2. Introducción
@@ -17,7 +17,7 @@ El proyecto forma parte del curso **[SYMFONY (FRAMEWORK PARA PHP)](https://cftic
 
 # 4. Alcance
 
-La aplicación MotoCampeones estará especializada en rankings, registros y en predicciones de las marcas de motos en las principales competiciones sobre asfalto (**[MotoGP](https://www.motogp.com)** y **[SBK](https://www.worldsbk.com/es)**) y tierra (**[MXGP](https://www.mxgp.com)**).
+La aplicación MotoCampeones estará especializada en rankings, registros y en predicciones de las marcas de motos en las principales competiciones de motociclismo en velocidad y motocross.
 
 Las herramientas y tecnologías que se han usado son las siguientes:
 - Para ejecutar código PHP en local tenemos **[XAMPP (servidor Apache + MariaDB + PHP + Perl)](https://www.apachefriends.org)**.
@@ -53,7 +53,7 @@ $ composer require --dev symfony/maker-bundle
 En este caso no hay configuración de un **[Docker](https://www.docker.com/)**:
 
 <p>
-<img src="" alt="Configuración de un Docker" width="" /></a>
+<img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Captura.PNG" alt="Configuración de un Docker" width="" /></a>
 </p>
 
 3. Comprobación del proyecto creado
@@ -68,7 +68,7 @@ $ php -S localhost:8000 -t public/
 
 En el navegador: http://localhost:8000/
 
-# 6. [4] Pasos de instalación/configuración para el despliegue en la nube
+# 6. [5] Pasos de instalación/configuración para el despliegue en la nube
 
 1. Abrir una cuenta en Platform.sh y crear un proyecto nuevo en la región deseada (por ejemplo en la **[nube de Amazon](https://aws.amazon.com/es/free/?trk=2d5aad89-991b-4184-98b5-1f562e3102c8&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Core-Main|Core|ES|ES|Text&ef_id=CjwKCAjw5s6WBhA4EiwACGncZfDpAMhHdboXzqD3gXOs215IILOGx0x_imdbdyFSIGLwngdve3OvYhoCzPoQAvD_BwE:G:s&s_kwcid=AL!4422!3!561218200770!e!!g!!aws&ef_id=CjwKCAjw5s6WBhA4EiwACGncZfDpAMhHdboXzqD3gXOs215IILOGx0x_imdbdyFSIGLwngdve3OvYhoCzPoQAvD_BwE:G:s&s_kwcid=AL!4422!3!561218200770!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)** -> Europe - Sweden eu-5 - AWS) 
 
@@ -81,13 +81,13 @@ $ git clone ...@....git nombre_del_proyecto_creado
 
 También hay que añadir 3 ficheros de configuración para el despliegue:
 
-- **[.platform.app.yaml]()**
-- **[~/.platform/routes.yaml]()**
+- **[.platform.app.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform.app.yaml)**
+- **[~/.platform/routes.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform/routes.yaml)**
     - Documentación:
-- **[~/.platform/services.yaml]()**
+- **[~/.platform/services.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform/services.yaml)**
     - Documentación:
 
-4. [Añadir la primera página con su vista y controlador](https://symfony.com/doc/current/page_creation.html#creating-a-page-route-and-controller)**
+4. **[Añadir la primera página con su vista y controlador](https://symfony.com/doc/current/page_creation.html#creating-a-page-route-and-controller)**
 
 - **Ruta de la vista:** ~/templates/nombre_de_la_vista.html.twig
 - **Ruta del controlador:** ~/src/Controller/nombre_del_controladorController.php
@@ -95,7 +95,7 @@ También hay que añadir 3 ficheros de configuración para el despliegue:
 5. Despliegue a la nube
 ~~~
 $ git add .
-$git commit -m "descripción del commit"
+$ git commit -m "descripción del commit"
 $ git push nombre_repositorio (lo más probable que se haya creado con la denominación de 'origin')
 ~~~
 
@@ -162,3 +162,18 @@ $ git push nombre_repositorio (lo más probable que se haya creado con la denomi
     - **[https://www.doctrine-project.org/projects/doctrine-orm/en/2.11/index.html](https://www.doctrine-project.org/projects/doctrine-orm/en/2.11/index.html)**.
 - GitHub:
     - **[https://github.com/doctrine](https://github.com/doctrine)**.
+
+# 8. Referencias
+
+## Datos
+- **[MXGP](https://www.mxgp.com)**
+- **[MotoGP](https://www.motogp.com)**
+- **[SBK](https://www.worldsbk.com/es)**
+- **[FIM](https://www.fim-moto.com)**
+    - **[https://www.fim-moto.com/en/sports/view/fim-mx3-motocross-world-championship-22](https://www.fim-moto.com/en/sports/view/fim-mx3-motocross-world-championship-22)**
+
+## Diseño
+
+- **[Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)**
+- **[w3school](https://www.w3schools.com/)**
+- **[MDB](https://mdbootstrap.com/)** 
