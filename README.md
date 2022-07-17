@@ -1,7 +1,7 @@
 # 1. [DEV] Aplicación ONLINE
 
 <p align="center">
-<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="180px" /></a>
+<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="580px" /></a>
 </p>
 
 # 2. Introducción
@@ -66,9 +66,12 @@ $ php bin/console about
 $ php -S localhost:8000 -t public/
 ~~~ 
 
-En el navegador: http://localhost:8000/
+En el navegador: 
+~~~
+http://localhost:8000/
+~~~
 
-# 6. [5] Pasos de instalación/configuración para el despliegue en la nube
+# 6. [5] Pasos de instalación/configuración (despliegue en la nube)
 
 1. Abrir una cuenta en Platform.sh y crear un proyecto nuevo en la región deseada (por ejemplo en la **[nube de Amazon](https://aws.amazon.com/es/free/?trk=2d5aad89-991b-4184-98b5-1f562e3102c8&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Core-Main|Core|ES|ES|Text&ef_id=CjwKCAjw5s6WBhA4EiwACGncZfDpAMhHdboXzqD3gXOs215IILOGx0x_imdbdyFSIGLwngdve3OvYhoCzPoQAvD_BwE:G:s&s_kwcid=AL!4422!3!561218200770!e!!g!!aws&ef_id=CjwKCAjw5s6WBhA4EiwACGncZfDpAMhHdboXzqD3gXOs215IILOGx0x_imdbdyFSIGLwngdve3OvYhoCzPoQAvD_BwE:G:s&s_kwcid=AL!4422!3!561218200770!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)** -> Europe - Sweden eu-5 - AWS) 
 
@@ -77,15 +80,16 @@ En el navegador: http://localhost:8000/
 $ git clone ...@....git nombre_del_proyecto_creado
 ~~~
 
-3. Trasladar los ficheros creados en el paso 2. del punto anterior (5.) al repositorio clonado en el paso anterior
+3. Trasladar los ficheros creados en el paso 2. del punto anterior (5.) a la carpeta del repositorio clonado en el paso anterior
 
 También hay que añadir 3 ficheros de configuración para el despliegue:
 
 - **[.platform.app.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform.app.yaml)**
+    - Documentación: **[https://docs.platform.sh/create-apps.html](https://docs.platform.sh/create-apps.html)**
 - **[~/.platform/routes.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform/routes.yaml)**
-    - Documentación:
+    - Documentación: **[https://docs.platform.sh/define-routes.html](https://docs.platform.sh/define-routes.html)**
 - **[~/.platform/services.yaml](https://github.com/antoniojturel/motocampeonas/blob/main/.platform/services.yaml)**
-    - Documentación:
+    - Documentación: **[https://docs.platform.sh/add-services.html](https://docs.platform.sh/add-services.html)**
 
 4. **[Añadir la primera página con su vista y controlador](https://symfony.com/doc/current/page_creation.html#creating-a-page-route-and-controller)**
 
