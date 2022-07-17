@@ -1,7 +1,7 @@
 # 1. [DEV] Aplicación ONLINE
 
 <p align="center">
-<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="580px" /></a>
+<a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/" target="_blanck"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="580px" /></a>
 </p>
 
 # 2. Introducción
@@ -105,7 +105,7 @@ $ git push nombre_repositorio (lo más probable que se haya creado con la denomi
 
 # 6 .Principales ficheros editables
 
-- ~/platform/*
+- ~/.platform/*
 - ~/public/*
 - ~/src/Controller
 - ~/src/Entity
