@@ -1,4 +1,4 @@
-# 1. [DEV] Aplicación ONLINE
+# 1. [DEV] Aplicación ONLINE (en AWS a través de Platform.sh)
 
 <p align="center">
 <a href="https://main-bvxea6i-pzxxuekmihirk.eu-5.platformsh.site/" target="_blanck"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="580px" /></a>
