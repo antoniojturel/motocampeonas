@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-class pruebaController extends AbstractController
+class homeController extends AbstractController
 {
     
     #[Route('/', name: 'ejemplo')]
