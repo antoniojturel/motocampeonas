@@ -10,8 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class pruebaController extends AbstractController
 {
     
-    #[Route('/', name: 'ejemplo')]
-    public function ejemplo()
+    #[Route('/', name: 'bienvenida')]
+    public function bienvenida()
     {
         return $this->render('home.html.twig');
     }

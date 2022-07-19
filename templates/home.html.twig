@@ -41,4 +41,12 @@
   </button>
 </div>
 {% endblock %}
+
+  {{ include ('avisoCookies.html.twig') }}
+
+  <script>
+    $(document).ready(function(){
+        $("#exampleModal").modal('show');
+    });
+  </script>
 {% endblock %}
