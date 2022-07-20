@@ -2,37 +2,43 @@
  <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">MotoCampeonas</a>
+    <a class="navbar-brand" href="{{ path('vistaBienvenida') }}">MotoCampeonas</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ path('vistaBienvenida') }}">Bienvenida</a>
         </li>
-        <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {# <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="{{ path('vistaRankings') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
          Rankings
          </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <li><a class="dropdown-item" href="#">Velocidad</a></li>
-             <li><a class="dropdown-item" href="#">Motocross</a></li>
+             <li><a class="dropdown-item" href="{{ path('vistaRankingVelocidad') }}">Velocidad</a></li>
+             <li><a class="dropdown-item" href="{{ path('vistaRankingMotocross') }}">Motocross</a></li>
              <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="#">Referencias</a></li>
+              <li><a class="dropdown-item" href="#">Referencias</a></li> 
             </ul>
+        </li>#}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('vistaRankingVelocidad') }}">Ranking Velocidad</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('vistaRankingMotocross') }}">Ranking Motocross</a>
+        </li>               
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('vistaRegistros') }}">Registros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Registros</a>
+          <a class="nav-link" href="{{ path('vistaDatos') }}">Datos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Datos</a>
+          <a class="nav-link disabled" href="#">Predicción</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Predicción</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login/Registro</a>
+          <a class="nav-link disabled" href="#">Login/Registro</a>
         </li>
       </ul>
       <form class="d-flex" action="">
