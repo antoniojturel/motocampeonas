@@ -2,8 +2,8 @@
 
    {% block title %}Ranking Motocross - MotoCampeonas{% endblock %}
 
-   {% block tituloContenido %}Ranking{% endblock %}
-   {% block subtituloContenido %}Motocross{% endblock %}
+   {% block tituloContenido %}Ranking Motocross{% endblock %}
+   {% block subtituloContenido %}Número de victorias (pilotos y constructores) en Alta y Baja cilindrada{% endblock %}
    {% block cuerpocontenido %}
    <div class="container mt-3">
    <table class="table">
@@ -19,32 +19,27 @@
         </button></center></th>
       </tr>
     </thead>
-    <tbody>
+    {% for datos in datosTabla %}
       <tr>
-        <td><center>1</center></td>
-        <td><center>Honda</center></td>
+        <td><center>{{datos.posicion}}</center></td>
+        <td><center>{{datos.marca}}</center></td>
         <td>
           <center>
-          <div id="{{nombresDonut[0]}}" style="width:100px"></div>
+          <div id="{{datos.nombreidAlta}}" style="width:100px"></div>
           </center>
          </td>
         <td>
           <center>
-          <div id="{{nombresDonut[1]}}" style="width:100px"></div>
+          <div id="{{datos.nombreidBaja}}" style="width:100px"></div>
           </center>
          </td>
-      </tr>
-      <tr>
-        <td><center>2</center></td>
-        <td><center>Yamaha</center></td>
-        <td><center>1</center></td>
-        <td><center>1</center></td>
-      </tr>
+      </tr> 
+    {% endfor %}
     </tbody>
   </table>
 </div>
 
-    {% for iddiv in nombresDonut %}
+    {% for datos in datosScipt %}
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -53,7 +48,7 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Effort', 'Amount given'],
-          ['My all',  100],
+          ['{{datos.cilindrada}}',  {{datos.victorias}}],
         ]);
 
         var options = {
@@ -68,7 +63,7 @@
           colors:['#c9c9c9']
         };
         
-        var chart = new google.visualization.PieChart(document.getElementById('{{iddiv}}'));
+        var chart = new google.visualization.PieChart(document.getElementById('{{datos.nombreid}}'));
         chart.draw(data, options);
       }
     </script>
