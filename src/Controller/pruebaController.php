@@ -55,12 +55,12 @@ class pruebaController extends AbstractController
     }
 
     /**
-     * @Route("/datos", name="vistaDatos")
+     * @Route("/graficos", name="vistaGraficos")
      */
-    #[Route('/datos', name: 'vistaDatos')]
-    public function vistaDatos()
+    #[Route('/graficos', name: 'vistaGraficos')]
+    public function vistaGraficos()
     {
-        return $this->render('datos.html.twig');
+        return $this->render('graficos.html.twig');
     }
 }
 ?>
