@@ -4,5 +4,84 @@
 
    {% block tituloContenido %}Ranking{% endblock %}
    {% block subtituloContenido %}Velocidad{% endblock %}
-   
+      {% block cuerpocontenido %}
+   <div class="container mt-3">
+   <table class="table">
+     <thead>
+      <tr>
+        <th><center>Posición</center></th>
+        <th><center>Marca</center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Alta Cilindrada" data-bs-content="WorldSBK, MotoGP, 500cc">
+        Alta
+        </button></center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Media Cilindrada" data-bs-content="WorldSSP, Moto2, 250cc">
+        Media
+        </button></center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Baja Cilindrada" data-bs-content="WorldSSP300, Moto3, 125cc">
+        Baja
+        </button></center></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><center>1</center></td>
+        <td><center>Honda</center></td>
+        <td>
+          <center>
+          <div id="{{nombresDonut[0]}}" style="width:100px"></div>
+          </center>
+         </td>
+        <td>
+          <center>
+          <div id="{{nombresDonut[1]}}" style="width:100px"></div>
+          </center>
+         </td>
+        <td>
+          <center>
+          <div id="{{nombresDonut[2]}}" style="width:100px"></div>
+          </center>
+         </td>
+      </tr>
+      <tr>
+        <td><center>2</center></td>
+        <td><center>Yamaha</center></td>
+        <td><center>1</center></td>
+        <td><center>1</center></td>
+        <td><center>1</center></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    {% for iddiv in nombresDonut %}
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['My all',  100],
+        ]);
+
+        var options = {
+         //title: 'My Daily Activities',
+          pieHole: 0.5,
+          pieSliceText: 'value',
+          pieSliceTextStyle: {
+            color: 'black',
+            fontSize: 15
+          },
+          legend: 'none',
+          colors:['#c9c9c9']
+        };
+        
+        var chart = new google.visualization.PieChart(document.getElementById('{{iddiv}}'));
+        chart.draw(data, options);
+      }
+    </script>
+   {% endfor %}
+
+   {% endblock %}
    {% block cookies %}{% endblock %}

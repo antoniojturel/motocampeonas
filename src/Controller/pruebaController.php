@@ -33,7 +33,11 @@ class pruebaController extends AbstractController
     #[Route('/ranking_velocidad', name: 'vistaRankingVelocidad')]
     public function vistaRankingVelocidad()
     {
-        return $this->render('rankingVelocidad.html.twig');
+        $id_nombres=['donut1','donut2','donut3'];
+        dump($id_nombres);
+        return $this->render('rankingVelocidad.html.twig',[
+            'nombresDonut' => $id_nombres 
+        ]);
     }
 
     /**
@@ -42,7 +46,11 @@ class pruebaController extends AbstractController
     #[Route('/ranking_motocross', name: 'vistaRankingMotocross')]
     public function vistaRankingMotocross()
     {
-        return $this->render('rankingMotocross.html.twig');
+        $id_nombres=['donut1','donut2'];
+        dump($id_nombres);
+        return $this->render('rankingMotocross.html.twig',[
+            'nombresDonut' => $id_nombres 
+        ]);
     }
 
     /**
