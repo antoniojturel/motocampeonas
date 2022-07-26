@@ -6,7 +6,7 @@
 
 # 2. Introducción
 
-El proyecto de desarrollo de esta aplicación (motocampeonas) se está desarrollando con el framework de **[Symfony](https://symfony.com/)** de tipo Modelo-Vista-Controlador (**[MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador)**) y en este repositorio se encuentran los ficheros editables para que funcione su ejecución en **local** y en la **nube**.
+El proyecto de desarrollo FULLSTACK (frontend y backend) de esta aplicación (motocampeonas) se está desarrollando con el framework de **[Symfony](https://symfony.com/)** de tipo Modelo-Vista-Controlador (**[MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador)**) y en este repositorio se encuentran los ficheros editables para que funcione su ejecución en **local** y en la **nube**.
 El proyecto forma parte del curso **[SYMFONY (FRAMEWORK PARA PHP)](https://cftic.centrosdeformacion.empleo.madrid.org/cursos-2020-21/symfony-framework-para-php-)** impartido en el Centro de Referencia Nacional de Desarrollo Informático y Comunicaciones (**[CFTIC](https://cftic.centrosdeformacion.empleo.madrid.org/)**) a través de la empresa **[CAS Training](https://cas-training.com/)**.
 
 # 3. Objetivo
@@ -109,9 +109,9 @@ $ git push nombre_repositorio (lo más probable que se haya creado con la denomi
 
 - ~/.platform/*
 - ~/public/*
-- ~/src/Controller
-- ~/src/Entity
-- ~/src/Repository
+- ~/src/Controller/*
+- ~/src/Entity/*
+- ~/src/Repository/*
 - ~/templates/*
 - ~/.env
 - ~/.platform.app.yaml

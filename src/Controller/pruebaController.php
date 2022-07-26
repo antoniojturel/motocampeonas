@@ -3,34 +3,52 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
-
 
 class pruebaController extends AbstractController
 {
     /**
-     * @Route("/", name="vistaBienvenida")
+     * @Route("/", name="inicio")
      */
-    #[Route('/', name: 'vistaBienvenida')]
-    public function bienvenida()
+    #[Route('/', name: 'inicio')]
+    public function inicio()
+    {
+        return $this->redirectToRoute('vistaBienvenida');
+    }
+
+    /**
+     * @Route("/{_locale}", name="vistaBienvenida")
+     */
+    #[Route('/{_locale}', name: 'vistaBienvenida')]
+    public function bienvenida(Request $request)
     {
         return $this->render('bienvenida.html.twig');
     }
 
     /**
-     * @Route("/rankings", name="vistaRankings")
+     * @Route("/es", name="vistaBienvenidaES")
      */
-    //#[Route('/rankings', name: 'vistaRankings')]
-    //public function vistaRankings()
-    //{
-    //    return $this->render('rankings.html.twig');
-    //}
+    #[Route('/es', name: 'vistaBienvenidaES')]
+    public function bienvenidaES(Request $request)
+    {
+        return $this->render('bienvenida.html.twig');
+    }
 
     /**
-     * @Route("/ranking_velocidad", name="vistaRankingVelocidad")
+     * @Route("/en", name="vistaBienvenidaEN")
      */
-    #[Route('/ranking_velocidad', name: 'vistaRankingVelocidad')]
+    #[Route('/en', name: 'vistaBienvenidaEN')]
+    public function bienvenidaEN(Request $request)
+    {
+        return $this->render('bienvenida.html.twig');
+    }
+
+    /**
+     * @Route("{_locale}/ranking_velocidad", name="vistaRankingVelocidad")
+     */
+    #[Route('/{_locale}/ranking_velocidad', name: 'vistaRankingVelocidad')]
     public function vistaRankingVelocidad()
     {
         $victorias = [
@@ -287,9 +305,9 @@ class pruebaController extends AbstractController
     }
 
     /**
-     * @Route("/ranking_motocross", name="vistaRankingMotocross")
+     * @Route("/{_locale}/ranking_motocross", name="vistaRankingMotocross")
      */
-    #[Route('/ranking_motocross', name: 'vistaRankingMotocross')]
+    #[Route('/{_locale}/ranking_motocross', name: 'vistaRankingMotocross')]
     public function vistaRankingMotocross()
     {
         $victorias = [
@@ -448,18 +466,18 @@ class pruebaController extends AbstractController
     }
 
     /**
-     * @Route("/registros", name="vistaRegistros")
+     * @Route("/{_locale}/registros", name="vistaRegistros")
      */
-    #[Route('/registros', name: 'vistaRegistros')]
+    #[Route('/{_locale}/registros', name: 'vistaRegistros')]
     public function vistaRegistros()
     {
         return $this->render('registros.html.twig');
     }
 
     /**
-     * @Route("/graficos", name="vistaGraficos")
+     * @Route("/{_locale}/graficos", name="vistaGraficos")
      */
-    #[Route('/graficos', name: 'vistaGraficos')]
+    #[Route('{_locale}/graficos', name: 'vistaGraficos')]
     public function vistaGraficos()
     {
         return $this->render('graficos.html.twig');
