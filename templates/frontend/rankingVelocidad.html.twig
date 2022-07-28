@@ -29,17 +29,17 @@
         <td><center>{{datos.marca}}</center></td>
         <td>
           <center>
-          <div id="{{datos.nombreidAlta}}" style="width:100px"></div>
+          <div id="{{datos.alta}}" style="width:100px"></div>
           </center>
          </td>
         <td>
           <center>
-          <div id="{{datos.nombreidMedia}}" style="width:100px"></div>
+          <div id="{{datos.media}}" style="width:100px"></div>
           </center>
          </td>
         <td>
           <center>
-          <div id="{{datos.nombreidBaja}}" style="width:100px"></div>
+          <div id="{{datos.baja}}" style="width:100px"></div>
           </center>
          </td>
       </tr> 
@@ -47,7 +47,7 @@
     </tbody>
   </table>
 </div>
-
+{#
     {% for datos in datosScipt %}
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -77,6 +77,6 @@
       }
     </script>
    {% endfor %}
-
+#}
    {% endblock %}
    {% block cookies %}{% endblock %}

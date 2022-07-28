@@ -22,7 +22,7 @@
 
   <body>
     {% block cabecera %}
-      {{ include ('menu.html.twig') }}
+      {{ include ('frontend/menu.html.twig') }}
     {% endblock %}
 
     {% block contenido %}
@@ -34,10 +34,10 @@
     {% endblock %}
 
     {% block pieDePagina %}
-      {{ include ('pieDePagina.html.twig') }}
+      {{ include ('frontend/pieDePagina.html.twig') }}
     {% endblock %}
     {% block cookies %}
-      {{ include ('avisoCookies.html.twig') }}  
+      {{ include ('frontend/avisoCookies.html.twig') }}  
     {% endblock %}
     {# https://mdbootstrap.com/docs/standard/extended/back-to-top/ #}
     <button

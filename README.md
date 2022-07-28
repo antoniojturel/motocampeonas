@@ -44,12 +44,6 @@ Las herramientas y tecnologías que se han usado son las siguientes:
 $ composer create-project symfony/skeleton:"6.1.*" nombre_del_proyecto
 $ cd nombre_del_proyecto
 $ composer require webapp
-$ composer require twig
-$ composer require symfony/twig-pack
-$ composer require doctrine/annotations
-$ composer require symfony/orm-pack
-$ composer require --dev symfony/maker-bundle
-
 ~~~ 
 
 En este caso no hay configuración de un **[Docker](https://www.docker.com/)**:
@@ -94,6 +88,9 @@ También hay que añadir 3 ficheros de configuración para el despliegue:
     - Documentación: **[https://docs.platform.sh/add-services.html](https://docs.platform.sh/add-services.html)**
 
 4. **[Añadir la primera página con su vista y controlador](https://symfony.com/doc/current/page_creation.html#creating-a-page-route-and-controller)**
+~~~
+$ php bin/console make:controller nombre_del_controladorController
+~~~
 
 - **Ruta de la vista:** ~/templates/nombre_de_la_vista.html.twig
 - **Ruta del controlador:** ~/src/Controller/nombre_del_controladorController.php
@@ -113,6 +110,7 @@ $ git push nombre_repositorio (lo más probable que se haya creado con la denomi
 - ~/src/Entity/*
 - ~/src/Repository/*
 - ~/templates/*
+- ~/translations/*
 - ~/.env
 - ~/.platform.app.yaml
 
