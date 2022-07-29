@@ -67,9 +67,14 @@ class FrontendController extends AbstractController
     }
 
     #[Route('/{_locale}/registros', name: 'vistaRegistros')]
-    public function vistaRegistros()
+    public function vistaRegistros(EntityManagerInterface $em)
     {
-        return $this->render('frontend/registros.html.twig');
+        $datosTablaDBvelocidad = $em->getRepository(Rankingvelocidad::class)->findAll();
+        $datosTablaDBmotocross = $em->getRepository(Rankingmotocross::class)->findAll();        
+        return $this->render('frontend/registros.html.twig',[
+            'datosTablaVelocidad' => $datosTablaDBvelocidad,
+            'datosTablaMotocross' => $datosTablaDBmotocross,            
+        ]);
     }
 
     #[Route('{_locale}/graficos', name: 'vistaGraficos')]
