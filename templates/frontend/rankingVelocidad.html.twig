@@ -1,24 +1,24 @@
    {% extends 'base.html.twig' %}
 
-   {% block title %}Ranking Velocidad - MotoCampeonas{% endblock %}
+   {% block title %}{% trans %}menu1{% endtrans %} - MotoCampeonas{% endblock %}
 
-   {% block tituloContenido %}Ranking Velocidad{% endblock %}
-   {% block subtituloContenido %}Número de victorias (pilotos y constructores) en Alta, Media y Baja cilindrada{% endblock %}
+   {% block tituloContenido %}{% trans %}menu1{% endtrans %}{% endblock %}
+   {% block subtituloContenido %}{% trans %}submenu1{% endtrans %}{% endblock %}
       {% block cuerpocontenido %}
    <div class="container mt-3">
    <table class="table">
      <thead>
       <tr>
-        <th><center>Posición</center></th>
-        <th><center>Marca</center></th>
-        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Alta Cilindrada" data-bs-content="WorldSBK, MotoGP, 500cc">
-        Alta
+        <th><center>{% trans %}nivelranking{% endtrans %}</center></th>
+        <th><center>{% trans %}marcamoto{% endtrans %}</center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="WorldSBK, MotoGP, 500cc">
+        {% trans %}potenciaalta{% endtrans %}
         </button></center></th>
-        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Media Cilindrada" data-bs-content="WorldSSP, Moto2, 250cc">
-        Media
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}mediacilindrada{% endtrans %}" data-bs-content="WorldSSP, Moto2, 250cc">
+        {% trans %}potenciamedia{% endtrans %}
         </button></center></th>
-        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="Baja Cilindrada" data-bs-content="WorldSSP300, Moto3, 125cc">
-        Baja
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}bajacilindrada{% endtrans %}" data-bs-content="WorldSSP300, Moto3, 125cc">
+        {% trans %}potenciabaja{% endtrans %}
         </button></center></th>
       </tr>
     </thead>
@@ -29,17 +29,17 @@
         <td><center>{{datos.marca}}</center></td>
         <td>
           <center>
-          <div id="{{datos.alta}}" style="width:100px"></div>
+          <div id="{{datos.iddonutalta}}" style="width:100px"></div>
           </center>
          </td>
         <td>
           <center>
-          <div id="{{datos.media}}" style="width:100px"></div>
+          <div id="{{datos.iddonutmedia}}" style="width:100px"></div>
           </center>
          </td>
         <td>
           <center>
-          <div id="{{datos.baja}}" style="width:100px"></div>
+          <div id="{{datos.iddonutbaja}}" style="width:100px"></div>
           </center>
          </td>
       </tr> 
@@ -47,7 +47,7 @@
     </tbody>
   </table>
 </div>
-{#
+
     {% for datos in datosScipt %}
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -72,11 +72,11 @@
           colors:['#c9c9c9']
         };
         
-        var chart = new google.visualization.PieChart(document.getElementById('{{datos.nombreid}}'));
+        var chart = new google.visualization.PieChart(document.getElementById('{{datos.iddonut}}'));
         chart.draw(data, options);
       }
     </script>
    {% endfor %}
-#}
+
    {% endblock %}
    {% block cookies %}{% endblock %}

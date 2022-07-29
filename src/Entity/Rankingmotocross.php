@@ -2,40 +2,34 @@
 
 namespace App\Entity;
 
-use App\Repository\RankingvelocidadRepository;
+use App\Repository\RankingmotocrossRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: RankingvelocidadRepository::class)]
-class Rankingvelocidad
+#[ORM\Entity(repositoryClass: RankingmotocrossRepository::class)]
+class Rankingmotocross
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
+    #[ORM\Column(type: 'integer')]
+    private $id;
 
-    #[ORM\Column(length: 2)]
-    private ?string $posicion = null;
+    #[ORM\Column(type: 'string', length: 2)]
+    private $posicion;
 
-    #[ORM\Column(length: 15)]
-    private ?string $marca = null;
+    #[ORM\Column(type: 'string', length: 15)]
+    private $marca;
 
-    #[ORM\Column(length: 3)]
-    private ?string $alta = null;
+    #[ORM\Column(type: 'string', length: 3)]
+    private $alta;
 
-    #[ORM\Column(length: 3)]
-    private ?string $media = null;
+    #[ORM\Column(type: 'string', length: 3)]
+    private $baja;
 
-    #[ORM\Column(length: 3)]
-    private ?string $baja = null;
+    #[ORM\Column(type: 'string', length: 15)]
+    private $iddonutalta;
 
-    #[ORM\Column(length: 15)]
-    private ?string $iddonutalta = null;
-
-    #[ORM\Column(length: 15)]
-    private ?string $iddonutmedia = null;
-
-    #[ORM\Column(length: 15)]
-    private ?string $iddonutbaja = null;
+    #[ORM\Column(type: 'string', length: 15)]
+    private $iddonutbaja;
 
     public function getId(): ?int
     {
@@ -78,18 +72,6 @@ class Rankingvelocidad
         return $this;
     }
 
-    public function getMedia(): ?string
-    {
-        return $this->media;
-    }
-
-    public function setMedia(string $media): self
-    {
-        $this->media = $media;
-
-        return $this;
-    }
-
     public function getBaja(): ?string
     {
         return $this->baja;
@@ -109,19 +91,7 @@ class Rankingvelocidad
 
     public function setIddonutalta(string $iddonutalta): self
     {
-        $this->baja = $iddonutalta;
-
-        return $this;
-    }
-
-    public function getIddonutmedia(): ?string
-    {
-        return $this->iddonutmedia;
-    }
-
-    public function setIddonutmedia(string $iddonutmedia): self
-    {
-        $this->baja = $iddonutmedia;
+        $this->iddonutalta = $iddonutalta;
 
         return $this;
     }
@@ -133,7 +103,7 @@ class Rankingvelocidad
 
     public function setIddonutbaja(string $iddonutbaja): self
     {
-        $this->baja = $iddonutbaja;
+        $this->iddonutbaja = $iddonutbaja;
 
         return $this;
     }

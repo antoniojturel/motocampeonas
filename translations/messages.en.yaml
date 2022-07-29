@@ -4,11 +4,24 @@ submenu1: Number of winnings (riders and constructors) in High, Medium and Low p
 menu2: Motocross Ranking 
 submenu2: Number of winnings (riders and constructors) in High and Low power
 menu3: Charts
+urlmenu3: charts
 submenu3: Speed and Motocross
 menu4: Records
 submenu4: Speed and Motocross
 menu5: Prediction
 submenu5: Speed and Motocross
 menu6: Sign in/Sign up
+nivelranking: Position
+marcamoto: Manufacturer
+potenciaalta: High
+potenciamedia: Medium 
+potenciabaja: Low 
+altacilindrada: High power
+mediacilindrada: Medium power
+bajacilindrada: Low power
+cabeceracookies: Attention
+contenidocookies: This webpage use cookies to enhance the performance
+botoncookies: Cookies used
+botonarriba: Go up
 idioma1: Spanish
 idioma2: English

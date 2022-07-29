@@ -4,11 +4,24 @@ submenu1: Número de victorias (pilotos y constructores) en Alta, Media y Baja c
 menu2: Ranking Motocross
 submenu2: Número de victorias (pilotos y constructores) en Alta y Baja cilindrada
 menu3: Gráficos
+urlmenu3: graficos
 submenu3: Velocidad y Motocross
 menu4: Registros
 submenu4: Velocidad y Motocross
 menu5: Predicción
 submenu5: Velocidad y Motocross
 menu6: Iniciar sesión/Registrarse
+nivelranking: Posición
+marcamoto: Fabricante
+potenciaalta: Alta
+potenciamedia: Media 
+potenciabaja: Baja 
+altacilindrada: Alta cilindrada
+mediacilindrada: Media cilindrada
+bajacilindrada: Baja cilindrada
+cabeceracookies: Aviso
+contenidocookies: Esta aplicación web tiene cookies para mejorar el rendimiento
+botoncookies: Cookies utilizadas
+botonarriba: Ir arriba
 idioma1: Español
 idioma2: Inglés

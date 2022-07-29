@@ -1,13 +1,14 @@
     {% extends 'base.html.twig' %}
 
-    {% block title %}Home - MotoCampeonas{% endblock %}
+    {% block title %}{% trans %}menu0{% endtrans %} - MotoCampeonas{% endblock %}
 
     {% block contenido %}
       {{ include ('frontend/carousel.html.twig') }}
       <div class="row align-items-center">
         <div class="col mt-4 p-5 bg-secondary bg-opacity-25 text-black rounded">
          <a href="{{ path('vistaRankingVelocidad') }}" class="link-secondary" style="text-decoration:none">
-         <h1>{% trans %}menu1{% endtrans %}</h1>
+         {# <h1>{% trans %}menu1{% endtrans %}</h1> #}
+         <h1>{{ 'menu1'|trans }}</h1>
          <p>{% trans %}submenu1{% endtrans %}</p>
          </a>
         </div>
@@ -37,7 +38,7 @@
         </div>
       </div>
       <div class="mt-4 p-5 bg-secondary bg-opacity-25 text-black rounded">
-       <a href="#" class="link-secondary disabled" style="text-decoration:none;text-align:center">
+       <a href="{{ path('vistaPrediccion') }}" class="link-secondary disabled" style="text-decoration:none;text-align:center">
        <h1>{% trans %}menu5{% endtrans %}</h1>
        <p>{% trans %}submenu5{% endtrans %}</p>
        </a>

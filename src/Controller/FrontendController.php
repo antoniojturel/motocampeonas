@@ -8,6 +8,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Rankingvelocidad;
 use App\Repository\RankingvelocidadRepository;
+use App\Entity\Googlescriptrankingvelocidad;
+use App\Repository\GooglescriptrankingvelocidadRepository;
+use App\Entity\Rankingmotocross;
+use App\Repository\RankingmotocrossRepository;
+use App\Entity\Googlescriptrankingmotocross;
+use App\Repository\GooglescriptrankingmotocrossRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\Id;
 
@@ -42,18 +48,21 @@ class FrontendController extends AbstractController
     public function vistaRankingVelocidad(EntityManagerInterface $em)
     {
         $datosTablaDB = $em->getRepository(Rankingvelocidad::class)->findAll();
+        $datosScriptDB = $em->getRepository(Googlescriptrankingvelocidad::class)->findAll();        
         return $this->render('frontend/rankingVelocidad.html.twig',[
-            'datosTabla' => $datosTablaDB
+            'datosTabla' => $datosTablaDB,
+            'datosScipt' => $datosScriptDB
         ]);
     }
 
     #[Route('/{_locale}/ranking_motocross', name: 'vistaRankingMotocross')]
-    public function vistaRankingMotocross()
+    public function vistaRankingMotocross(EntityManagerInterface $em)
     {
+        $datosTablaDB = $em->getRepository(Rankingmotocross::class)->findAll();
+        $datosScriptDB = $em->getRepository(Googlescriptrankingmotocross::class)->findAll();   
         return $this->render('frontend/rankingMotocross.html.twig',[
-            //'victoriasData' => $victorias,
-            //'datosTabla' => $datosTablaDB,
-            //'datosScipt' => $datosScriptDB
+            'datosTabla' => $datosTablaDB,
+            'datosScipt' => $datosScriptDB
         ]);
     }
 
@@ -67,5 +76,11 @@ class FrontendController extends AbstractController
     public function vistaGraficos()
     {
         return $this->render('frontend/graficos.html.twig');
+    }
+
+    #[Route('{_locale}/prediccion', name: 'vistaPrediccion')]
+    public function vistaPrediccion()
+    {
+        return $this->render('frontend/prediccion.html.twig');
     }
 }
