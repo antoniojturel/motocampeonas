@@ -8,11 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BackendController extends AbstractController
 {
-    #[Route('/backend', name: 'app_backend')]
-    public function index(): Response
+    #[Route('{_locale}/prediccion', name: 'vistaPrediccion')]
+    public function vistaPrediccion()
     {
-        return $this->render('backend/index.html.twig', [
-            'controller_name' => 'BackendController',
-        ]);
+        return $this->render('backend/prediccion.html.twig');
     }
 }

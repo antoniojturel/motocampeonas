@@ -7,36 +7,148 @@
    
    {% block cookies %}{% endblock %}
    {% block cuerpocontenido %}
-{#   <div class="container mt-3">
-    <center>
-      <div id="myChart" class="row align-items-center"></div>
-    </center>
-   </div>
+      <div class="accordion" id="accordionExample">
+       <div class="accordion-item">
+         <h2 class="accordion-header" id="headingOne">
+         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         {% trans %}potenciaalta{% endtrans %}
+         </button>
+         </h2>
+           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+        <!-- -->
+               <div class="alert alert-secondary">
+                 <h2>{% trans %}velocidad{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="WorldSBK, MotoGP, 500cc">{% trans %}potenciaalta{% endtrans %}</button></h2>
+               </div>
+               <div class="row">
+                 <div class="col">
+                   <center><div id="columnchart_material" style="width: 800px; height: 500px;"></div></center>                
+                 </div>
+                 <div class="col">
+                   <center><div id="regions_div" style="width: 900px; height: 500px;"></div></center>
+                 </div>
+               </div>              
+                  <center><div id="timeline" ></div></center>
+               <div class="alert alert-secondary">
+                 <h2>{% trans %}Motocross{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="MXGP, WMX, MX3">{% trans %}potenciaalta{% endtrans %}</button></h2>
+               </div>
+               <div class="row">
+                 <div class="col">
+                   <center><div id="columnchart_material" style="width: 800px; height: 500px;"></div></center>                
+                 </div>
+                 <div class="col">
+                   <center><div id="regions_div" style="width: 900px; height: 500px;"></div></center>
+                 </div>
+               </div>              
+                  <center><div id="timeline" ></div></center>   
+        <!-- -->
+             </div>
+           </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        {% trans %}potenciamedia{% endtrans %}
+        </button>
+        </h2>
+         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+           <div class="accordion-body">
+         <!-- -->   
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+         <!-- -->
+           </div>
+         </div>
+      </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        {% trans %}potenciabaja{% endtrans %}
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+     <!-- -->
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+     <!-- -->
+      </div>
+    </div>
+  </div>
+</div>
       
 <script>
-google.charts.load('current',{packages:['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+    <script id='APIGoogleChartonline' src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
-// Set Data
-var data = google.visualization.arrayToDataTable([
-  ['Price', 'Size'],
-  [50,7],[60,8],[70,8],[80,9],[90,9],
-  [100,9],[110,10],[120,11],
-  [130,14],[140,14],[150,15]
-]);
-// Set Options
-var options = {
-  title: 'House Prices vs. Size',
-  hAxis: {title: 'Square Meters'},
-  vAxis: {title: 'Price in Millions'},
-  legend: 'none'
-};
-// Draw
-var chart = new google.visualization.LineChart(document.getElementById('myChart'));
-chart.draw(data, options);
-}
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+</script>
+<script>
+      <script id='APIGoogleChartonline' src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+</script>
+<script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['timeline']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+          [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+          [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
+
+        chart.draw(dataTable);
+      }
+    </script>
 </script>
 
-#}
    {% endblock %}

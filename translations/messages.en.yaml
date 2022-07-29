@@ -19,10 +19,18 @@ potenciabaja: Low
 altacilindrada: High power
 mediacilindrada: Medium power
 bajacilindrada: Low power
+velocidad: Speed
 cabeceracookies: Attention
 contenidocookies: This webpage use cookies to enhance the performance
 botoncookies: Cookies used
 botonarriba: Go up
 botonpdf: Download pdf 
+piedepaginacabecera: Tools and technologies used
+piedepaginacolumna1titulo: MotoCampeonas Project
+piedepaginacolumna1contenido: FULLSTACK (frontend and backend) software development project with the Symfony's framework and its programming language (PHP). A webapp to consult and collaborate, among people, about the best motorcicle manufacturers under competition in the last years
+piedepaginacolumna2titulo: References (DATA)
+piedepaginacolumna3titulo: References (DESIGN)
+piedepaginacolumna4titulo: References (COURSE)
+piedepaginafinal: Updated to 2022 (deployed in
 idioma1: Spanish
 idioma2: English

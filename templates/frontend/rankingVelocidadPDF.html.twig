@@ -1,0 +1,60 @@
+<html>
+<head>
+</head>
+<body>
+<h1><center>{% trans %}menu4{% endtrans %}</center></h1>
+<h1><center>{% trans %}menu1{% endtrans %}</center></h1>
+<h3><center>{% trans %}submenu1{% endtrans %}</center></h3>
+</br>
+<p>{% trans %}altacilindrada{% endtrans %}: WorldSBK, MotoGP, 500cc</p>
+<p>{% trans %}mediacilindrada{% endtrans %}: WorldSSP, Moto2, 250cc</p>
+<p>{% trans %}bajacilindrada{% endtrans %}: WorldSSP300, Moto3, 125cc</p>
+</br>
+  <div class="container mt-3"><center>
+ <table class="table">
+     <thead>
+      <tr>
+        <th><center>{% trans %}nivelranking{% endtrans %}</center></th>
+        <th><center>{% trans %}marcamoto{% endtrans %}</center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="WorldSBK, MotoGP, 500cc">
+        {% trans %}potenciaalta{% endtrans %}
+        </button></center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}mediacilindrada{% endtrans %}" data-bs-content="WorldSSP, Moto2, 250cc">
+        {% trans %}potenciamedia{% endtrans %}
+        </button></center></th>
+        <th><center><button type="button" class="btn bg-secondary bg-opacity-25 text-black" data-bs-toggle="popover" title="{% trans %}bajacilindrada{% endtrans %}" data-bs-content="WorldSSP300, Moto3, 125cc">
+        {% trans %}potenciabaja{% endtrans %}
+        </button></center></th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for datos in datosTabla %}
+      <tr>
+        <td><center>{{datos.posicion}}</center></td>
+        <td><center>{{datos.marca}}</center></td>
+        <td>
+          <center>
+          <div style="width:100px">{{datos.alta}}</div>
+          </center>
+         </td>
+        <td>
+          <center>
+          <div style="width:100px">{{datos.media}}</div>
+          </center>
+         </td>
+        <td>
+          <center>
+          <div style="width:100px">{{datos.baja}}</div>
+          </center>
+         </td>
+      </tr> 
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+</br>
+<h1><b>{{ 'piedepaginacolumna1titulo'|trans }}</h1>
+<h3><b>{{ 'piedepaginacolumna1contenido'|trans }}.</b></h3>
+<h3><a href="https://github.com/antoniojturel/motocampeonas" target:"_blank">https://github.com/antoniojturel/motocampeonas</a></h3>
+</body>
+</html>

@@ -44,6 +44,8 @@ Las herramientas y tecnologías que se han usado son las siguientes:
 $ composer create-project symfony/skeleton:"6.1.*" nombre_del_proyecto
 $ cd nombre_del_proyecto
 $ composer require webapp
+$ composer require symfony/orm-pack
+$ composer require --dev symfony/maker-bundle
 ~~~ 
 
 En este caso no hay configuración de un **[Docker](https://www.docker.com/)**:

@@ -19,10 +19,18 @@ potenciabaja: Baja
 altacilindrada: Alta cilindrada
 mediacilindrada: Media cilindrada
 bajacilindrada: Baja cilindrada
+velocidad: Velocidad
 cabeceracookies: Aviso
 contenidocookies: Esta aplicación web tiene cookies para mejorar el rendimiento
 botoncookies: Cookies utilizadas
 botonarriba: Ir arriba
 botonpdf: Descargar pdf 
+piedepaginacabecera: Herramientas y tecnologías usadas
+piedepaginacolumna1titulo: Proyecto MotoCampeonas
+piedepaginacolumna1contenido: Proyecto de desarrollo software FULLSTACK (frontend y backend) con el framework Symfony y su lenguaje de programación (PHP). Se trata de una aplicación web de información y colaboración, entre personas, sobre las mejores marcas de moto en las competiciones de los últimos años
+piedepaginacolumna2titulo: Referencias (DATOS)
+piedepaginacolumna3titulo: Referencias (DISEÑO)
+piedepaginacolumna4titulo: Referencias (CURSO)
+piedepaginafinal: Actualizada a 2022 (despliegue en
 idioma1: Español
 idioma2: Inglés
