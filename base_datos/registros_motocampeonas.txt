@@ -354,46 +354,46 @@ INSERT INTO `victorias` (`ID_VICTORIA`, `ID_CATEGORIA`, `ID_CLASIFICACION`, `ID_
 (338, 'MotoGP', 'Constructores', 2002, 'Honda'),
 (339, '250cc', 'Constructores', 2002, 'Aprilia'),
 (340, '125cc', 'Constructores', 2002, 'Aprilia'),
-(341, 'MotoGP', 'Constructores', 2001, 'Honda'),
+(341, '500cc', 'Constructores', 2001, 'Honda'),
 (342, '250cc', 'Constructores', 2001, 'Honda'),
 (343, '125cc', 'Constructores', 2001, 'Gilera'),
-(344, 'MotoGP', 'Constructores', 2000, 'Suzuki'),
+(344, '500cc', 'Constructores', 2000, 'Suzuki'),
 (345, '250cc', 'Constructores', 2000, 'Yamaha'),
 (346, '125cc', 'Constructores', 2000, 'Aprilia'),
-(347, 'MotoGP', 'Constructores', 1999, 'Honda'),
+(347, '500cc', 'Constructores', 1999, 'Honda'),
 (348, '250cc', 'Constructores', 1999, 'Aprilia'),
 (349, '125cc', 'Constructores', 1999, 'Honda'),
-(350, 'MotoGP', 'Constructores', 1998, 'Honda'),
+(350, '500cc', 'Constructores', 1998, 'Honda'),
 (351, '250cc', 'Constructores', 1998, 'Aprilia'),
 (352, '125cc', 'Constructores', 1998, 'Honda'),
-(353, 'MotoGP', 'Constructores', 1997, 'Honda'),
+(353, '500cc', 'Constructores', 1997, 'Honda'),
 (354, '250cc', 'Constructores', 1997, 'Honda'),
 (355, '125cc', 'Constructores', 1997, 'Aprilia'),
-(356, 'MotoGP', 'Constructores', 1996, 'Honda'),
+(356, '500cc', 'Constructores', 1996, 'Honda'),
 (357, '250cc', 'Constructores', 1996, 'Aprilia'),
 (358, '125cc', 'Constructores', 1996, 'Honda'),
-(359, 'MotoGP', 'Constructores', 1995, 'Honda'),
+(359, '500cc', 'Constructores', 1995, 'Honda'),
 (360, '250cc', 'Constructores', 1995, 'Aprilia'),
 (361, '125cc', 'Constructores', 1995, 'Honda'),
-(362, 'MotoGP', 'Constructores', 1994, 'Honda'),
+(362, '500cc', 'Constructores', 1994, 'Honda'),
 (363, '250cc', 'Constructores', 1994, 'Aprilia'),
 (364, '125cc', 'Constructores', 1994, 'Aprilia'),
-(365, 'MotoGP', 'Constructores', 1993, 'Suzuki'),
+(365, '500cc', 'Constructores', 1993, 'Suzuki'),
 (366, '250cc', 'Constructores', 1993, 'Yamaha'),
 (367, '125cc', 'Constructores', 1993, 'Honda'),
-(368, 'MotoGP', 'Constructores', 1992, 'Yamaha'),
+(368, '500cc', 'Constructores', 1992, 'Yamaha'),
 (369, '250cc', 'Constructores', 1992, 'Honda'),
 (370, '125cc', 'Constructores', 1992, 'Aprilia'),
-(371, 'MotoGP', 'Constructores', 1991, 'Yamaha'),
+(371, '500cc', 'Constructores', 1991, 'Yamaha'),
 (372, '250cc', 'Constructores', 1991, 'Honda'),
 (373, '125cc', 'Constructores', 1991, 'Honda'),
-(374, 'MotoGP', 'Constructores', 1990, 'Yamaha'),
+(374, '500cc', 'Constructores', 1990, 'Yamaha'),
 (375, '250cc', 'Constructores', 1990, 'Yamaha'),
 (376, '125cc', 'Constructores', 1990, 'Honda'),
-(377, 'MotoGP', 'Constructores', 1989, 'Honda'),
+(377, '500cc', 'Constructores', 1989, 'Honda'),
 (378, '250cc', 'Constructores', 1989, 'Honda'),
 (379, '125cc', 'Constructores', 1989, 'JJ Cobas'),
-(380, 'MotoGP', 'Constructores', 1988, 'Yamaha'),
+(380, '500cc', 'Constructores', 1988, 'Yamaha'),
 (381, '250cc', 'Constructores', 1988, 'Honda'),
 (382, '125cc', 'Constructores', 1988, 'Derbi'),
 (383, 'MotoGP', 'Pilotos', 2021, 'Yamaha'),
@@ -456,46 +456,46 @@ INSERT INTO `victorias` (`ID_VICTORIA`, `ID_CATEGORIA`, `ID_CLASIFICACION`, `ID_
 (440, 'MotoGP', 'Pilotos', 2002, 'Honda'),
 (441, '250cc', 'Pilotos', 2002, 'Aprilia'),
 (442, '125cc', 'Pilotos', 2002, 'Aprilia'),
-(443, 'MotoGP', 'Pilotos', 2001, 'Honda'),
+(443, '500cc', 'Pilotos', 2001, 'Honda'),
 (444, '250cc', 'Pilotos', 2001, 'Honda'),
 (445, '125cc', 'Pilotos', 2001, 'Gilera'),
-(446, 'MotoGP', 'Pilotos', 2000, 'Suzuki'),
+(446, '500cc', 'Pilotos', 2000, 'Suzuki'),
 (447, '250cc', 'Pilotos', 2000, 'Yamaha'),
 (448, '125cc', 'Pilotos', 2000, 'Aprilia'),
-(449, 'MotoGP', 'Pilotos', 1999, 'Honda'),
+(449, '500cc', 'Pilotos', 1999, 'Honda'),
 (450, '250cc', 'Pilotos', 1999, 'Aprilia'),
 (451, '125cc', 'Pilotos', 1999, 'Honda'),
-(452, 'MotoGP', 'Pilotos', 1998, 'Honda'),
+(452, '500cc', 'Pilotos', 1998, 'Honda'),
 (453, '250cc', 'Pilotos', 1998, 'Aprilia'),
 (454, '125cc', 'Pilotos', 1998, 'Honda'),
-(455, 'MotoGP', 'Pilotos', 1997, 'Honda'),
+(455, '500cc', 'Pilotos', 1997, 'Honda'),
 (456, '250cc', 'Pilotos', 1997, 'Honda'),
 (457, '125cc', 'Pilotos', 1997, 'Aprilia'),
-(458, 'MotoGP', 'Pilotos', 1996, 'Honda'),
+(458, '500cc', 'Pilotos', 1996, 'Honda'),
 (459, '250cc', 'Pilotos', 1996, 'Aprilia'),
 (460, '125cc', 'Pilotos', 1996, 'Honda'),
-(461, 'MotoGP', 'Pilotos', 1995, 'Honda'),
+(461, '500cc', 'Pilotos', 1995, 'Honda'),
 (462, '250cc', 'Pilotos', 1995, 'Aprilia'),
 (463, '125cc', 'Pilotos', 1995, 'Honda'),
-(464, 'MotoGP', 'Pilotos', 1994, 'Honda'),
+(464, '500cc', 'Pilotos', 1994, 'Honda'),
 (465, '250cc', 'Pilotos', 1994, 'Aprilia'),
 (466, '125cc', 'Pilotos', 1994, 'Aprilia'),
-(467, 'MotoGP', 'Pilotos', 1993, 'Suzuki'),
+(467, '500cc', 'Pilotos', 1993, 'Suzuki'),
 (468, '250cc', 'Pilotos', 1993, 'Yamaha'),
 (469, '125cc', 'Pilotos', 1993, 'Honda'),
-(470, 'MotoGP', 'Pilotos', 1992, 'Yamaha'),
+(470, '500cc', 'Pilotos', 1992, 'Yamaha'),
 (471, '250cc', 'Pilotos', 1992, 'Honda'),
 (472, '125cc', 'Pilotos', 1992, 'Aprilia'),
-(473, 'MotoGP', 'Pilotos', 1991, 'Yamaha'),
+(473, '500cc', 'Pilotos', 1991, 'Yamaha'),
 (474, '250cc', 'Pilotos', 1991, 'Honda'),
 (475, '125cc', 'Pilotos', 1991, 'Honda'),
-(476, 'MotoGP', 'Pilotos', 1990, 'Yamaha'),
+(476, '500cc', 'Pilotos', 1990, 'Yamaha'),
 (477, '250cc', 'Pilotos', 1990, 'Yamaha'),
 (478, '125cc', 'Pilotos', 1990, 'Honda'),
-(479, 'MotoGP', 'Pilotos', 1989, 'Honda'),
+(479, '500cc', 'Pilotos', 1989, 'Honda'),
 (480, '250cc', 'Pilotos', 1989, 'Honda'),
 (481, '125cc', 'Pilotos', 1989, 'JJ Cobas'),
-(482, 'MotoGP', 'Pilotos', 1988, 'Yamaha'),
+(482, '500cc', 'Pilotos', 1988, 'Yamaha'),
 (483, '250cc', 'Pilotos', 1988, 'Honda'),
 (484, '125cc', 'Pilotos', 1988, 'Derbi'),
 (485, 'WMX', 'Constructores', 2009, 'KTM'),
@@ -801,46 +801,46 @@ INSERT INTO `victorias` (337, '125cc', 'Constructores',2003, 'Honda');
 INSERT INTO `victorias` (338, 'MotoGP', 'Constructores',2002, 'Honda');
 INSERT INTO `victorias` (339, '250cc', 'Constructores',2002, 'Aprilia');
 INSERT INTO `victorias` (340, '125cc', 'Constructores',2002, 'Aprilia');
-INSERT INTO `victorias` (341, 'MotoGP', 'Constructores',2001, 'Honda');
+INSERT INTO `victorias` (341, '500cc', 'Constructores',2001, 'Honda');
 INSERT INTO `victorias` (342, '250cc', 'Constructores',2001, 'Honda');
 INSERT INTO `victorias` (343, '125cc', 'Constructores',2001, 'Gilera');
-INSERT INTO `victorias` (344, 'MotoGP', 'Constructores',2000, 'Suzuki');
+INSERT INTO `victorias` (344, '500cc', 'Constructores',2000, 'Suzuki');
 INSERT INTO `victorias` (345, '250cc', 'Constructores',2000, 'Yamaha');
 INSERT INTO `victorias` (346, '125cc', 'Constructores',2000, 'Aprilia');
-INSERT INTO `victorias` (347, 'MotoGP', 'Constructores',1999, 'Honda');
+INSERT INTO `victorias` (347, '500cc', 'Constructores',1999, 'Honda');
 INSERT INTO `victorias` (348, '250cc', 'Constructores',1999, 'Aprilia');
 INSERT INTO `victorias` (349, '125cc', 'Constructores',1999, 'Honda');
-INSERT INTO `victorias` (350, 'MotoGP', 'Constructores',1998, 'Honda');
+INSERT INTO `victorias` (350, '500cc', 'Constructores',1998, 'Honda');
 INSERT INTO `victorias` (351, '250cc', 'Constructores',1998, 'Aprilia');
 INSERT INTO `victorias` (352, '125cc', 'Constructores',1998, 'Honda');
-INSERT INTO `victorias` (353, 'MotoGP', 'Constructores',1997, 'Honda');
+INSERT INTO `victorias` (353, '500cc', 'Constructores',1997, 'Honda');
 INSERT INTO `victorias` (354, '250cc', 'Constructores',1997, 'Honda');
 INSERT INTO `victorias` (355, '125cc', 'Constructores',1997, 'Aprilia');
-INSERT INTO `victorias` (356, 'MotoGP', 'Constructores',1996, 'Honda');
+INSERT INTO `victorias` (356, '500cc', 'Constructores',1996, 'Honda');
 INSERT INTO `victorias` (357, '250cc', 'Constructores',1996, 'Aprilia');
 INSERT INTO `victorias` (358, '125cc', 'Constructores',1996, 'Honda');
-INSERT INTO `victorias` (359, 'MotoGP', 'Constructores',1995, 'Honda');
+INSERT INTO `victorias` (359, '500cc', 'Constructores',1995, 'Honda');
 INSERT INTO `victorias` (360, '250cc', 'Constructores',1995, 'Aprilia');
 INSERT INTO `victorias` (361, '125cc', 'Constructores',1995, 'Honda');
-INSERT INTO `victorias` (362, 'MotoGP', 'Constructores',1994, 'Honda');
+INSERT INTO `victorias` (362, '500cc', 'Constructores',1994, 'Honda');
 INSERT INTO `victorias` (363, '250cc', 'Constructores',1994, 'Aprilia');
 INSERT INTO `victorias` (364, '125cc', 'Constructores',1994, 'Aprilia');
-INSERT INTO `victorias` (365, 'MotoGP', 'Constructores',1993, 'Suzuki');
+INSERT INTO `victorias` (365, '500cc', 'Constructores',1993, 'Suzuki');
 INSERT INTO `victorias` (366, '250cc', 'Constructores',1993, 'Yamaha');
 INSERT INTO `victorias` (367, '125cc', 'Constructores',1993, 'Honda');
-INSERT INTO `victorias` (368, 'MotoGP', 'Constructores',1992, 'Yamaha');
+INSERT INTO `victorias` (368, '500cc', 'Constructores',1992, 'Yamaha');
 INSERT INTO `victorias` (369, '250cc', 'Constructores',1992, 'Honda');
 INSERT INTO `victorias` (370, '125cc', 'Constructores',1992, 'Aprilia');
-INSERT INTO `victorias` (371, 'MotoGP', 'Constructores',1991, 'Yamaha');
+INSERT INTO `victorias` (371, '500cc', 'Constructores',1991, 'Yamaha');
 INSERT INTO `victorias` (372, '250cc', 'Constructores',1991, 'Honda');
 INSERT INTO `victorias` (373, '125cc', 'Constructores',1991, 'Honda');
-INSERT INTO `victorias` (374, 'MotoGP', 'Constructores',1990, 'Yamaha');
+INSERT INTO `victorias` (374, '500cc', 'Constructores',1990, 'Yamaha');
 INSERT INTO `victorias` (375, '250cc', 'Constructores',1990, 'Yamaha');
 INSERT INTO `victorias` (376, '125cc', 'Constructores',1990, 'Honda');
-INSERT INTO `victorias` (377, 'MotoGP', 'Constructores',1989, 'Honda');
+INSERT INTO `victorias` (377, '500cc', 'Constructores',1989, 'Honda');
 INSERT INTO `victorias` (378, '250cc', 'Constructores',1989, 'Honda');
 INSERT INTO `victorias` (379, '125cc', 'Constructores',1989, 'JJ Cobas');
-INSERT INTO `victorias` (380, 'MotoGP', 'Constructores',1988, 'Yamaha');
+INSERT INTO `victorias` (380, '500cc', 'Constructores',1988, 'Yamaha');
 INSERT INTO `victorias` (381, '250cc', 'Constructores',1988, 'Honda');
 INSERT INTO `victorias` (382, '125cc', 'Constructores',1988, 'Derbi');
 INSERT INTO `victorias` (383, 'MotoGP', 'Pilotos',2021, 'Yamaha');
@@ -903,46 +903,46 @@ INSERT INTO `victorias` (439, '125cc', 'Pilotos',2003, 'Honda');
 INSERT INTO `victorias` (440, 'MotoGP', 'Pilotos',2002, 'Honda');
 INSERT INTO `victorias` (441, '250cc', 'Pilotos',2002, 'Aprilia');
 INSERT INTO `victorias` (442, '125cc', 'Pilotos',2002, 'Aprilia');
-INSERT INTO `victorias` (443, 'MotoGP', 'Pilotos',2001, 'Honda');
+INSERT INTO `victorias` (443, '500cc', 'Pilotos',2001, 'Honda');
 INSERT INTO `victorias` (444, '250cc', 'Pilotos',2001, 'Honda');
 INSERT INTO `victorias` (445, '125cc', 'Pilotos',2001, 'Gilera');
-INSERT INTO `victorias` (446, 'MotoGP', 'Pilotos',2000, 'Suzuki');
+INSERT INTO `victorias` (446, '500cc', 'Pilotos',2000, 'Suzuki');
 INSERT INTO `victorias` (447, '250cc', 'Pilotos',2000, 'Yamaha');
 INSERT INTO `victorias` (448, '125cc', 'Pilotos',2000, 'Aprilia');
-INSERT INTO `victorias` (449, 'MotoGP', 'Pilotos',1999, 'Honda');
+INSERT INTO `victorias` (449, '500cc', 'Pilotos',1999, 'Honda');
 INSERT INTO `victorias` (450, '250cc', 'Pilotos',1999, 'Aprilia');
 INSERT INTO `victorias` (451, '125cc', 'Pilotos',1999, 'Honda');
-INSERT INTO `victorias` (452, 'MotoGP', 'Pilotos',1998, 'Honda');
+INSERT INTO `victorias` (452, '500cc', 'Pilotos',1998, 'Honda');
 INSERT INTO `victorias` (453, '250cc', 'Pilotos',1998, 'Aprilia');
 INSERT INTO `victorias` (454, '125cc', 'Pilotos',1998, 'Honda');
-INSERT INTO `victorias` (455, 'MotoGP', 'Pilotos',1997, 'Honda');
+INSERT INTO `victorias` (455, '500cc', 'Pilotos',1997, 'Honda');
 INSERT INTO `victorias` (456, '250cc', 'Pilotos',1997, 'Honda');
 INSERT INTO `victorias` (457, '125cc', 'Pilotos',1997, 'Aprilia');
-INSERT INTO `victorias` (458, 'MotoGP', 'Pilotos',1996, 'Honda');
+INSERT INTO `victorias` (458, '500cc', 'Pilotos',1996, 'Honda');
 INSERT INTO `victorias` (459, '250cc', 'Pilotos',1996, 'Aprilia');
 INSERT INTO `victorias` (460, '125cc', 'Pilotos',1996, 'Honda');
-INSERT INTO `victorias` (461, 'MotoGP', 'Pilotos',1995, 'Honda');
+INSERT INTO `victorias` (461, '500cc', 'Pilotos',1995, 'Honda');
 INSERT INTO `victorias` (462, '250cc', 'Pilotos',1995, 'Aprilia');
 INSERT INTO `victorias` (463, '125cc', 'Pilotos',1995, 'Honda');
-INSERT INTO `victorias` (464, 'MotoGP', 'Pilotos',1994, 'Honda');
+INSERT INTO `victorias` (464, '500cc', 'Pilotos',1994, 'Honda');
 INSERT INTO `victorias` (465, '250cc', 'Pilotos',1994, 'Aprilia');
 INSERT INTO `victorias` (466, '125cc', 'Pilotos',1994, 'Aprilia');
-INSERT INTO `victorias` (467, 'MotoGP', 'Pilotos',1993, 'Suzuki');
+INSERT INTO `victorias` (467, '500cc', 'Pilotos',1993, 'Suzuki');
 INSERT INTO `victorias` (468, '250cc', 'Pilotos',1993, 'Yamaha');
 INSERT INTO `victorias` (469, '125cc', 'Pilotos',1993, 'Honda');
-INSERT INTO `victorias` (470, 'MotoGP', 'Pilotos',1992, 'Yamaha');
+INSERT INTO `victorias` (470, '500cc', 'Pilotos',1992, 'Yamaha');
 INSERT INTO `victorias` (471, '250cc', 'Pilotos',1992, 'Honda');
 INSERT INTO `victorias` (472, '125cc', 'Pilotos',1992, 'Aprilia');
-INSERT INTO `victorias` (473, 'MotoGP', 'Pilotos',1991, 'Yamaha');
+INSERT INTO `victorias` (473, '500cc', 'Pilotos',1991, 'Yamaha');
 INSERT INTO `victorias` (474, '250cc', 'Pilotos',1991, 'Honda');
 INSERT INTO `victorias` (475, '125cc', 'Pilotos',1991, 'Honda');
-INSERT INTO `victorias` (476, 'MotoGP', 'Pilotos',1990, 'Yamaha');
+INSERT INTO `victorias` (476, '500cc', 'Pilotos',1990, 'Yamaha');
 INSERT INTO `victorias` (477, '250cc', 'Pilotos',1990, 'Yamaha');
 INSERT INTO `victorias` (478, '125cc', 'Pilotos',1990, 'Honda');
-INSERT INTO `victorias` (479, 'MotoGP', 'Pilotos',1989, 'Honda');
+INSERT INTO `victorias` (479, '500cc', 'Pilotos',1989, 'Honda');
 INSERT INTO `victorias` (480, '250cc', 'Pilotos',1989, 'Honda');
 INSERT INTO `victorias` (481, '125cc', 'Pilotos',1989, 'JJ Cobas');
-INSERT INTO `victorias` (482, 'MotoGP', 'Pilotos',1988, 'Yamaha');
+INSERT INTO `victorias` (482, '500cc', 'Pilotos',1988, 'Yamaha');
 INSERT INTO `victorias` (483, '250cc', 'Pilotos',1988, 'Honda');
 INSERT INTO `victorias` (484, '125cc', 'Pilotos',1988, 'Derbi');
 INSERT INTO `victorias` (485, 'WMX', 'Constructores',2009, 'KTM');

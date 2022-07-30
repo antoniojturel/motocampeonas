@@ -7,104 +7,161 @@
    
    {% block cookies %}{% endblock %}
    {% block cuerpocontenido %}
-      <div class="accordion" id="accordionExample">
-       <div class="accordion-item">
-         <h2 class="accordion-header" id="headingOne">
-         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         {% trans %}potenciaalta{% endtrans %}
-         </button>
-         </h2>
-           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-             <div class="accordion-body">
-        <!-- -->
-               <div class="alert alert-secondary">
-                 <h2>{% trans %}velocidad{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="WorldSBK, MotoGP, 500cc">{% trans %}potenciaalta{% endtrans %}</button></h2>
-               </div>
-               <div class="row">
-                 <div class="col">
-                   <center><div id="columnchart_material" style="width: 800px; height: 500px;"></div></center>                
-                 </div>
-                 <div class="col">
-                   <center><div id="regions_div" style="width: 900px; height: 500px;"></div></center>
-                 </div>
-               </div>              
-                  <center><div id="timeline" ></div></center>
-               <div class="alert alert-secondary">
-                 <h2>{% trans %}Motocross{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="MXGP, WMX, MX3">{% trans %}potenciaalta{% endtrans %}</button></h2>
-               </div>
-               <div class="row">
-                 <div class="col">
-                   <center><div id="columnchart_material" style="width: 800px; height: 500px;"></div></center>                
-                 </div>
-                 <div class="col">
-                   <center><div id="regions_div" style="width: 900px; height: 500px;"></div></center>
-                 </div>
-               </div>              
-                  <center><div id="timeline" ></div></center>   
-        <!-- -->
-             </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        {% trans %}potenciamedia{% endtrans %}
-        </button>
-        </h2>
-         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-           <div class="accordion-body">
-         <!-- -->   
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-         <!-- -->
-           </div>
-         </div>
+      <br/>
+      <p><center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/200px-Flag_of_Germany.svg.png" width="25px" height="15px">&nbsp;Kalex&nbsp;&nbsp;<img src="https://www.lifeder.com/wp-content/uploads/2017/08/bandera-austria.jpg" width="25px" height="15px">&nbsp;KTM&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png" width="25px" height="15px">&nbsp;Aprilia, Ducati&nbsp;&nbsp;<img src="https://m.media-amazon.com/images/I/3157QAYMHnL._AC_SX425_.jpg" width="25px" height="15px">&nbsp;Honda, Kawasaki, Suzuki, Yamaha</center></p>
+      <br/>
+      <div class="alert alert-secondary">
+         <center><h2>{% trans %}velocidad{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="WorldSBK, MotoGP, 500cc">{% trans %}potenciaalta{% endtrans %}</button></h2></center>
       </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        {% trans %}potenciabaja{% endtrans %}
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-     <!-- -->
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-     <!-- -->
+        <center><div id="velocidadalta" style="max-width: 95%"></div></center>  
+        <center><div id="regionesvelocidadalta" class="w-75"></div></center> 
+      <br/>
+      <div class="alert alert-secondary">
+         <center><h2>Motocross&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}altacilindrada{% endtrans %}" data-bs-content="MXGP, WMX, MX3">{% trans %}potenciaalta{% endtrans %}</button></h2></center>
       </div>
-    </div>
-  </div>
-</div>
-      
+        <center><div id="motocrossalta" style="max-width: 95%"></div></center>  
+        <center><div id="regionesmotocrossalta" class="w-75"></div><center> 
+      <br/>
+      <div class="alert alert-secondary">
+         <center><h2>{% trans %}velocidad{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}mediacilindrada{% endtrans %}" data-bs-content="WorldSSP, Moto2, 250cc">{% trans %}potenciamedia{% endtrans %}</button></h2></center>
+      </div>
+        <center><div id="velocidadmedia" style="max-width: 95%"></div></center>  
+        <center><div id="regionesvelocidadmedia" class="w-75"></div></center>       
+      <br/>   
+      <div class="alert alert-secondary">
+         <center><h2>{% trans %}velocidad{% endtrans %}&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}bajacilindrada{% endtrans %}" data-bs-content="WorldSSP300, Moto3, 125cc">{% trans %}potenciabaja{% endtrans %}</button></h2></center>
+      </div>
+        <center><div id="velocidadbaja" style="max-width: 95%"></div></center>  
+        <center><div id="regionesvelocidadbaja" class="w-75"></div></center>       
+      <br/>      
+      <div class="alert alert-secondary">
+         <center><h2>Motocross&nbsp;<button type="button" class="btn btn-info btn-floating bg-light bg-opacity-50 text-black" data-bs-toggle="popover" title="{% trans %}bajacilindrada{% endtrans %}" data-bs-content="MX2">{% trans %}potenciabaja{% endtrans %}</button></h2></center>
+      </div> 
+        <center><div id="motocrossbaja" style="max-width: 95%"></div></center>  
+        <center><div id="regionesmotocrossbaja" class="w-75"></div></center>       
+      <br/>         
 <script>
     <script id='APIGoogleChartonline' src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
-
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 200],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
+          ['{{ 'marcamoto'|trans }}', 'WorldSBK', 'MotoGP','500cc'],
+          ['Honda', 10, 20, 16],
+          ['Yamaha', 4, 16, 8],
+          ['Ducati', 31, 2, 0],
+          ['Kawasaki', 14, 0, 0],
+          ['Aprilia', 7, 0, 0],                 
         ]);
 
         var options = {
           chart: {
-            title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            title: '{{'graficostitulo'|trans}}',
           }
         };
 
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+        var chart = new google.charts.Bar(document.getElementById('velocidadalta'));
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
-</script>
-<script>
-      <script id='APIGoogleChartonline' src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{ 'marcamoto'|trans }}', 'WorldSSP', 'Moto2','250cc'],
+          ['Honda', 19, 0, 18],
+          ['Yamaha', 18, 0, 6],
+          ['Aprilia', 0, 0, 18], 
+          ['Kalex', 0, 20, 0], 
+          ['Kawasaki', 7, 0, 0],       
+        ]);
+
+        var options = {
+          chart: {
+            title: '{{'graficostitulo'|trans}}',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('velocidadmedia'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{ 'marcamoto'|trans }}', 'WorldSSP300', 'Moto3','125cc'],
+          ['Honda', 0, 10, 20],
+          ['Aprilia', 0, 0, 18], 
+          ['KTM', 0, 10, 0], 
+          ['Kawasaki', 8, 0, 0],   
+          ['Yamaha', 2, 0, 0],    
+        ]);
+
+        var options = {
+          chart: {
+            title: '{{'graficostitulo'|trans}}',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('velocidadbaja'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{ 'marcamoto'|trans }}', 'MXGP', 'WMX','MX3'],
+          ['KTM', 9, 6, 11],
+          ['Yamaha', 2, 13, 3],
+          ['Kawasaki', 0, 7, 0], 
+          ['Honda', 5, 0, 5], 
+          ['Suzuki', 0, 0, 1],       
+        ]);
+
+        var options = {
+          chart: {
+            title: '{{'graficostitulo'|trans}}',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('motocrossalta'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{ 'marcamoto'|trans }}', 'MX2'],
+          ['KTM', 27],
+          ['Yamaha', 7],
+          ['Kawasaki', 1], 
+          ['Honda', 1], 
+        ]);
+
+        var options = {
+          chart: {
+            title: '{{'graficostitulo'|trans}}',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('motocrossbaja'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>            
+    <script type="text/javascript">
       google.charts.load('current', {
         'packages':['geochart'],
       });
@@ -112,43 +169,104 @@
 
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700]
+          ['{{'graficoregionpais'|trans}}', '{{'graficoregionvictorias'|trans}}'],
+          ['Japan', 88],
+          ['Italy', 40],
+          ['', 1]       
         ]);
 
         var options = {};
 
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        var chart = new google.visualization.GeoChart(document.getElementById('regionesvelocidadalta'));
 
         chart.draw(data, options);
       }
-</script>
-<script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     </script>
     <script type="text/javascript">
-      google.charts.load('current', {'packages':['timeline']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var container = document.getElementById('timeline');
-        var chart = new google.visualization.Timeline(container);
-        var dataTable = new google.visualization.DataTable();
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
 
-        dataTable.addColumn({ type: 'string', id: 'President' });
-        dataTable.addColumn({ type: 'date', id: 'Start' });
-        dataTable.addColumn({ type: 'date', id: 'End' });
-        dataTable.addRows([
-          [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
-          [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
-          [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{'graficoregionpais'|trans}}', '{{'graficoregionvictorias'|trans}}'],
+          ['Japan', 68],
+          ['Germany', 20],
+          ['', 1]
+        ]);
 
-        chart.draw(dataTable);
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regionesvelocidadmedia'));
+
+        chart.draw(data, options);
       }
-    </script>
+     </script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{'graficoregionpais'|trans}}', '{{'graficoregionvictorias'|trans}}'],
+          ['Japan', 40],
+          ['Italy', 18],
+          ['Austria', 10],
+          ['', 1]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regionesvelocidadbaja'));
+
+        chart.draw(data, options);
+      }
+     </script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{'graficoregionpais'|trans}}', '{{'graficoregionvictorias'|trans}}'],
+          ['Japan', 36],
+          ['Austria', 26],
+          ['', 1]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regionesmotocrossalta'));
+
+        chart.draw(data, options);
+      }
+     </script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['{{'graficoregionpais'|trans}}', '{{'graficoregionvictorias'|trans}}'],
+          ['Austria', 27],
+          ['Japan', 9],
+          ['', 1]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regionesmotocrossbaja'));
+
+        chart.draw(data, options);
+      }
+     </script>                    
 </script>
 
    {% endblock %}

@@ -10,21 +10,15 @@
 
 {% extends 'base.html.twig' %}
 
-{% block body_id 'error' %}
+{% block title %}MotoCampeonas{% endblock %}
 
-{% block main %}
-    <h1 class="text-danger">{{ 'http_error.name'|trans({ 'status_code': 404 }) }}</h1>
+{% block cookies %}{% endblock %}
 
-    <p class="lead">
-        {{ 'http_error_404.description'|trans }}
-    </p>
-    <p>
-        {{ 'http_error_404.suggestion'|trans({ 'url': path('blog_index') })|raw }}
-    </p>
-{% endblock %}
-
-{% block sidebar %}
-    {{ parent() }}
-
-    {{ show_source_code(_self) }}
+{% block contenido %}
+  <div class="alert alert-danger">
+    <h1><code><center>Error 404!</center></code></h1>
+  </div>
+  <div class="alert alert-info">
+    <center><strong><a href="{{ path('vistaBienvenida') }}">{% trans %}mensajeerror{% endtrans %}</strong></center>.
+  </div>
 {% endblock %}

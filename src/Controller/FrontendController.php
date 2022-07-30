@@ -211,22 +211,22 @@ class FrontendController extends AbstractController
             ],
             [
               'posicion' => 3,
-              'marca' => 'Kawasaki',
-              'iddonutalta' => 'donut3alta',                                  
+              'marca' => 'Honda',
+              'iddonutalta' => 'donut3alta',                              
               'iddonutbaja' => 'donut3baja'
-            ],                             
+            ],
             [
               'posicion' => 4,
-              'marca' => 'Honda',
-              'iddonutalta' => 'donut4alta',                              
+              'marca' => 'Kawasaki',
+              'iddonutalta' => 'donut4alta',                                  
               'iddonutbaja' => 'donut4baja'
-          ],
-          [
+            ],                             
+            [
               'posicion' => 5,
               'marca' => 'Suzuki',
               'iddonutalta' => 'donut5alta',                                  
               'iddonutbaja' => 'donut5baja'
-          ],                       
+            ],                       
           ];
         $datosScriptDB = [
             [
@@ -312,22 +312,22 @@ class FrontendController extends AbstractController
             ],
             [
               'posicion' => 3,
-              'marca' => 'Kawasaki',
+              'marca' => 'Honda',
               'alta' => 10,                                
+              'baja' => 1
+            ],
+            [
+              'posicion' => 4,
+              'marca' => 'Kawasaki',
+              'alta' => 7,                                
               'baja' => 1
             ],                             
             [
-              'posicion' => 4,
-              'marca' => 'Honda',
-              'alta' => 7,                                
-              'baja' => 1
-          ],
-          [
               'posicion' => 5,
               'marca' => 'Suzuki',
               'alta' => 1,                                
               'baja' => 0
-          ],                       
+            ],                       
           ];
 
           $datosTablaDBvelocidad = [
@@ -401,22 +401,22 @@ class FrontendController extends AbstractController
         ],
         [
           'posicion' => 3,
-          'marca' => 'Kawasaki',
+          'marca' => 'Honda',
           'alta' => 10,                                
           'baja' => 1
-        ],                             
+        ],
         [
           'posicion' => 4,
-          'marca' => 'Honda',
+          'marca' => 'Kawasaki',
           'alta' => 7,                                
           'baja' => 1
-      ],
-      [
+        ],
+        [
           'posicion' => 5,
           'marca' => 'Suzuki',
           'alta' => 1,                                
           'baja' => 0
-      ],                       
+        ],                       
       ];
         // $datosTablaDBmotocross = $em->getRepository(Rankingmotocross::class)->findAll();  
 
