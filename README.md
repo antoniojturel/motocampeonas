@@ -1,9 +1,6 @@
 # 1. [DEV] Aplicación ONLINE (en AWS a través de Platform.sh)
 <a href="https://main-bvxea6i-c3qqtjjvmstlk.eu-5.platformsh.site/"><img src="https://img.shields.io/badge/MotoCampeonas-an%20open%20source%20project-green"></a>&nbsp;
 <a href="https://github.com/antoniojturel/motocampeonas/pulls"><img src="https://img.shields.io/badge/Pull%20Request-Edit-green"></a>&nbsp;<a href="https://github.com/antoniojturel/motocampeonas/commits/main"><img src="https://img.shields.io/github/last-commit/antoniojturel/motocampeonas"></a>
-<p align="center">
-<a href="https://main-bvxea6i-c3qqtjjvmstlk.eu-5.platformsh.site/" target="_blanck"><img src="https://github.com/antoniojturel/motocampeonas/blob/main/anteproyecto/imagenes/Imagen2.png" alt="[DEV] Aplicación ONLINE en Platform.sh" width="580px" /></a>
-</p>
 
 # 2. Introducción
 
