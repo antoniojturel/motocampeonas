@@ -1,5 +1,5 @@
 <?php
-//
+
 //namespace App\Controller;
 //
 //use App\Entity\User;
@@ -50,14 +50,14 @@
 //                    ->from(new Address('verificaremailproyectosymfony@gmail.com', 'Proyecto Symfony MotoCampeonas'))
 //                    ->to($user->getEmail())
 //                    ->subject('Please Confirm your Email')
-//                    ->htmlTemplate('registration/confirmation_email.html.twig')
+//                    ->htmlTemplate('backend/confirmation_email.html.twig')
 //            );
 //            // do anything else you need here, like send an email
 //
 //            return $this->redirectToRoute('vistaBienvenida');
 //        }
 //
-//        return $this->render('registration/register.html.twig', [
+//        return $this->render('backend/registrarse.html.twig', [
 //            'registrationForm' => $form->createView(),
 //        ]);
 //    }
@@ -82,4 +82,3 @@
 //        return $this->redirectToRoute('app_register');
 //    }
 //}
-//

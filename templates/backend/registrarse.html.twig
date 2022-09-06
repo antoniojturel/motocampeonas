@@ -8,13 +8,31 @@
  {% for flash_error in app.flashes('verify_email_error') %}
      <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
  {% endfor %}
- <h1>Register</h1>
- {{ form_start(registrationForm) }}
-     {{ form_row(registrationForm.email) }}
-     {{ form_row(registrationForm.plainPassword, {
-         label: 'Password'
-     }) }}
-     {{ form_row(registrationForm.agreeTerms) }}
-     <button type="submit" class="btn">{% trans %}menu7{% endtrans %}</button>
- {{ form_end(registrationForm) }}
+
+    <div class="container-sm">
+    <form action="{{ path('app_registrando') }}" method="post">
+    <div class="mb-3 mt-3">
+    <label for="email" class="form-label">{% trans %}login1{% endtrans %}:</label>
+    <input type="email" class="form-control" id="emailform" name="emailform" maxlength="100" required>
+    </div>
+    <div class="mb-3 mt-3">
+    <label for="password" class="form-label">{% trans %}login2{% endtrans %}:</label>
+    <input type="password" class="form-control" id="passwordform" name="passwordform" required>
+    </div>
+    <div class="mb-3 mt-3">
+    <label for="nacionalidad" class="form-label">{% trans %}login3{% endtrans %}:</label>
+    <input type="text" class="form-control" id="nacionalidadform" name="nacionalidadform" maxlength="20" required>
+    </div>
+    <div class="mb-3 mt-3">
+    <label for="moto" class="form-label">{% trans %}login4{% endtrans %}:</label>
+    <input type="text" class="form-control" id="motoform" name="motoform" maxlength="30" required>
+    </div>
+{# If you want to control the URL the user is redirected to on success 
+        <input type="hidden" name="_target_path" value="{{ path('inicio') }}"/> 
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+#}
+    <button type="submit" class="btn btn-secondary btn-floating bg-light bg-opacity-50 text-black">{% trans %}menu7{% endtrans %}</button>
+    </div>
+
+    
 {% endblock %}

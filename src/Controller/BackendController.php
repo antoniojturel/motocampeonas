@@ -48,47 +48,59 @@ class BackendController extends AbstractController
         ]);
     }
 
-    #[Route('/logout', name: 'app_logout')]
+    #[Route('{_locale}/logout', name: 'app_logout')]
     public function logout(): Response
     {
 
     }
 
-#[Route('{_locale}/register', name: 'app_register')]
-public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, EntityManagerInterface $entityManager): Response
-{
-    $user = new User();
-    $form = $this->createForm(RegistrationFormType::class, $user);
-    $form->handleRequest($request);
-
-    if ($form->isSubmitted() && $form->isValid()) {
-        // encode the plain password
-        $user->setPassword(
-            $userPasswordHasher->hashPassword(
-                $user,
-                $form->get('plainPassword')->getData()
-            )
-        );
-
-        $entityManager->persist($user);
-        $entityManager->flush();
-
-        // generate a signed url and email it to the user
-        $this->emailVerifier->sendEmailConfirmation('app_verify_email', $user,
-            (new TemplatedEmail())
-                ->from(new Address('verificaremailproyectosymfony@gmail.com', 'Proyecto Symfony MotoCampeonas'))
-                ->to($user->getEmail())
-                ->subject('Please Confirm your Email')
-                ->htmlTemplate('backend/confirmation_email.html.twig')
-        );
-        // do anything else you need here, like send an email
-
-        return $this->redirectToRoute('vistaBienvenida');
+    #[Route('{_locale}/register', name: 'app_register')]
+    public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, EntityManagerInterface $entityManager): Response
+    {
+        return $this->render('backend/registrarse.html.twig');
     }
 
-    return $this->render('backend/registrarse.html.twig', [
-        'registrationForm' => $form->createView(),
-      ]);
+    #[Route('{_locale}/registrando', name: 'app_registrando')]
+    public function registrando(Request $request, UserPasswordHasherInterface $userPasswordHasher, EntityManagerInterface $entityManager): Response
+    {
+
+    $email = $request->request->get('emailform');
+    $password = $request->request->get('passwordform');
+    $nacionalidad = $request->request->get('nacionalidadform');
+    $moto = $request->request->get('motoform');
+    
+    $user = new User();
+    $user->setEmail($email);
+    $user->setNacionalidad($nacionalidad);
+    $user->setMoto($moto);
+    $user->setPassword($userPasswordHasher->hashPassword($user,$password));
+// añadir filtrado backend
+//    if ($form->isSubmitted() && $form->isValid()) {
+//        // encode the plain password
+//        $user->setPassword(
+//            $userPasswordHasher->hashPassword(
+//                $user,
+//                $password
+//            )
+//        );
+//
+//        $entityManager->persist($user);
+//        $entityManager->flush();
+//
+//        // generate a signed url and email it to the user
+//        $this->emailVerifier->sendEmailConfirmation('app_verify_email', $user,
+//            (new TemplatedEmail())
+//                ->from(new Address('verificaremailproyectosymfony@gmail.com', 'Proyecto Symfony MotoCampeonas'))
+//                ->to($user->getEmail())
+//                ->subject('Please Confirm your Email')
+//                ->htmlTemplate('backend/confirmation_email.html.twig')
+//        );
+//        // do anything else you need here, like send an email
+//
+//        return $this->redirectToRoute('vistaBienvenida');
+//    }
+
+    return $this->redirectToRoute('vistaBienvenida');
      }
 
      #[Route('/verify/email', name: 'app_verify_email')]
