@@ -1,8 +1,7 @@
-
 {% extends 'base.html.twig' %}
-{% block title %}{% trans %}menu5{% endtrans %} - MotoCampeonas{% endblock %}
-{% block tituloContenido %}{% trans %}menu5{% endtrans %}{% endblock %}
-{% block subtituloContenido %}{% trans %}submenu5{% endtrans %}{% endblock %}
+{% block title %}{% trans %}menu7{% endtrans %} - MotoCampeonas{% endblock %}
+{% block tituloContenido %}{% trans %}menu7{% endtrans %}{% endblock %}
+{% block subtituloContenido %}{% endblock %}
 
 {% block cookies %}{% endblock %}
 {% block cuerpocontenido %}
@@ -16,6 +15,6 @@
          label: 'Password'
      }) }}
      {{ form_row(registrationForm.agreeTerms) }}
-     <button type="submit" class="btn">Register</button>
+     <button type="submit" class="btn">{% trans %}menu7{% endtrans %}</button>
  {{ form_end(registrationForm) }}
 {% endblock %}
