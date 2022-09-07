@@ -12,6 +12,7 @@ menu5: Statistics
 submenu5: Speed and Motocross
 menu6: Sign in
 menu7: Register
+menu8: Sign out
 nivelranking: Position
 marcamoto: Manufacturer
 potenciaalta: High
@@ -43,3 +44,5 @@ login1: Email
 login2: Password
 login3: Nacionality
 login4: Moto manufacturer
+accesoestadisticas: Before consulting the statistics, please
+infomotoscomunidad: The moto manufacturers of our community are the following (draft data)

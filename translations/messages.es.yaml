@@ -12,6 +12,7 @@ menu5: Estadísticas
 submenu5: Velocidad y Motocross
 menu6: Iniciar sesión
 menu7: Registrarse
+menu8: Cerrar sesión
 nivelranking: Posición
 marcamoto: Fabricante
 potenciaalta: Alta
@@ -43,3 +44,5 @@ login1: Correo electrónico
 login2: Contraseña
 login3: Nacionalidad
 login4: Marca de moto
+accesoestadisticas: Para consultar las estadísticas tiene que
+infomotoscomunidad: Las marcas de moto de la comunidad MotoCampeonas son las siguientes (datos de prueba)

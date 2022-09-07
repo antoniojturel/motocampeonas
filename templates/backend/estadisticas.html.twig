@@ -4,9 +4,45 @@
 
    {% block tituloContenido %}{% trans %}menu5{% endtrans %}{% endblock %}
    {% block subtituloContenido %}{% endblock %}
-   
+
    {% block cookies %}{% endblock %}
 
    {% block cuerpocontenido %}
+   
+   {% if is_granted('ROLE_USER') %}
+      <div class="alert alert-secondary">
+      <center><h2>{% trans %}infomotoscomunidad{% endtrans %}</h2></center>
+      </div>
+      <center><div id="piechart" style="max-width: 95%"></div></center>
+   {% else %}
+   <div class="alert alert-danger">
+    <h1><code><center>{% trans %}accesoestadisticas{% endtrans %}<a class="nav-link" href="{{ path('app_login') }}">{% trans %}menu6{% endtrans %}</a></center></code></h1>
+   </div>
+   {% endif %}
 
-   {% endblock %}
+<script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Honda', 10],
+          ['KTM', 10],
+          ['Ducati', 10],
+          ['Suzuki', 10],
+        ]);
+
+        var options = {
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</script>
+{% endblock %}

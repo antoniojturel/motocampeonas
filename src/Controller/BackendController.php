@@ -29,6 +29,7 @@ class BackendController extends AbstractController
     #[Route('{_locale}/estadisticas', name: 'vistaEstadisticas')]
     public function vistaEstadisticas()
     {
+
         return $this->render('backend/estadisticas.html.twig');
     }
 
@@ -51,7 +52,8 @@ class BackendController extends AbstractController
     #[Route('{_locale}/logout', name: 'app_logout')]
     public function logout(): Response
     {
-
+        $session = $request->getSession();
+        $session->clear();
     }
 
     #[Route('{_locale}/register', name: 'app_register')]
@@ -69,12 +71,29 @@ class BackendController extends AbstractController
     $nacionalidad = $request->request->get('nacionalidadform');
     $moto = $request->request->get('motoform');
     
+    //$abrirFichero = fopen("App\EXTRAS\login.txt", "a");
+    //$escribirFichero = fwrite($abrirFichero, date("F j, Y, g:i a"));
+    //$cerrarFichero = fclose($abrirFichero);
+
     $user = new User();
     $user->setEmail($email);
     $user->setNacionalidad($nacionalidad);
     $user->setMoto($moto);
     $user->setPassword($userPasswordHasher->hashPassword($user,$password));
-// añadir filtrado backend
+
+    $entityManager->persist($user);
+    $entityManager->flush();
+
+    $this->emailVerifier->sendEmailConfirmation('app_verify_email', $user,
+       (new TemplatedEmail())
+       ->from(new Address('verificaremailproyectosymfony@gmail.com', 'Proyecto Symfony MotoCampeonas'))
+       ->to($email)
+       ->subject('Please Confirm your Email')
+       ->htmlTemplate('backend/confirmation_email.html.twig')
+    );
+
+// FALTA AÑADIR FILTRADO BACKEND
+
 //    if ($form->isSubmitted() && $form->isValid()) {
 //        // encode the plain password
 //        $user->setPassword(
@@ -103,7 +122,7 @@ class BackendController extends AbstractController
     return $this->redirectToRoute('vistaBienvenida');
      }
 
-     #[Route('/verify/email', name: 'app_verify_email')]
+     #[Route('{_locale}/verify/email', name: 'app_verify_email')]
      public function verifyUserEmail(Request $request, TranslatorInterface $translator): Response
      {
          $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
@@ -120,6 +139,6 @@ class BackendController extends AbstractController
          // @TODO Change the redirect on success and handle or remove the flash message in your templates
          $this->addFlash('success', 'Your email address has been verified.');
      
-         return $this->redirectToRoute('app_register');
+         return $this->redirectToRoute('app_login');
      }
 }
