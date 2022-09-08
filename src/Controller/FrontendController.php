@@ -49,144 +49,153 @@ class FrontendController extends AbstractController
     #[Route('/{_locale}/ranking_velocidad', name: 'vistaRankingVelocidad')]
     public function vistaRankingVelocidad(EntityManagerInterface $em)
     {
-        $datosTablaDB = [
-            [
-              'posicion' => 1,
-              'marca' => 'Honda',
-              'iddonutalta' => 'donut1alta',
-              'iddonutmedia' => 'donut1media',                                   
-              'iddonutbaja' => 'donut1baja'
-            ],
-            [
-              'posicion' => 2,
-              'marca' => 'Yamaha',
-              'iddonutalta' => 'donut2alta',
-              'iddonutmedia' => 'donut2media',                                   
-              'iddonutbaja' => 'donut2baja'
-            ],
-            [
-              'posicion' => 3,
-              'marca' => 'Ducati',
-              'iddonutalta' => 'donut3alta',
-              'iddonutmedia' => 'donut3media',                                   
-              'iddonutbaja' => 'donut3baja'
-            ],                             
-            [
-              'posicion' => 4,
-              'marca' => 'Kawasaki',
-              'iddonutalta' => 'donut4alta',
-              'iddonutmedia' => 'donut4media',                                   
-              'iddonutbaja' => 'donut4baja'
-          ],
-          [
-              'posicion' => 5,
-              'marca' => 'Aprilia',
-              'iddonutalta' => 'donut5alta',
-              'iddonutmedia' => 'donut5media',                                   
-              'iddonutbaja' => 'donut5baja'
-          ],  
-          [
-              'posicion' => 6,
-              'marca' => 'Suzuki',
-              'iddonutalta' => 'donut6alta',
-              'iddonutmedia' => 'donut6media',                                   
-              'iddonutbaja' => 'donut6baja'
-          ],                      
-          ];
-          $datosScriptDB = [
-              [
-                'cilindrada' => 'Alta',
-                'victorias' => 46,
-                'iddonut' => 'donut1alta',
-              ],
-              [
-                  'cilindrada' => 'Media',
-                  'victorias' => 37,
-                  'iddonut' => 'donut1media',
-              ],
-              [
-                  'cilindrada' => 'Baja',
-                  'victorias' => 30,
-                  'iddonut' => 'donut1baja',
-              ],
-              [
-                  'cilindrada' => 'Alta',
-                  'victorias' => 28,
-                  'iddonut' => 'donut2alta',
-                ],
-                [
-                    'cilindrada' => 'Media',
-                    'victorias' => 24,
-                    'iddonut' => 'donut2media',
-                ],
-                [
-                    'cilindrada' => 'Baja',
-                    'victorias' => 2,
-                    'iddonut' => 'donut2baja',
-                ],
-                [
-                  'cilindrada' => 'Alta',
-                  'victorias' => 33,
-                  'iddonut' => 'donut3alta',
-                ],
-                [
-                    'cilindrada' => 'Media',
-                    'victorias' => 0,
-                    'iddonut' => 'donut3media',
-                ],
-                [
-                    'cilindrada' => 'Baja',
-                    'victorias' => 0,
-                    'iddonut' => 'donut3baja',
-                ],   
-                [
-                  'cilindrada' => 'Alta',
-                  'victorias' => 14,
-                  'iddonut' => 'donut4alta',
-                ],
-                [
-                    'cilindrada' => 'Media',
-                    'victorias' => 7,
-                    'iddonut' => 'donut4media',
-                ],
-                [
-                    'cilindrada' => 'Baja',
-                    'victorias' => 8,
-                    'iddonut' => 'donut4baja',
-                ],                                               
-                [
-                  'cilindrada' => 'Alta',
-                  'victorias' => 7,
-                  'iddonut' => 'donut5alta',
-                ],
-                [
-                    'cilindrada' => 'Media',
-                    'victorias' => 18,
-                    'iddonut' => 'donut5media',
-                ],
-                [
-                    'cilindrada' => 'Baja',
-                    'victorias' => 18,
-                    'iddonut' => 'donut5baja',
-                ],
-                [
-                  'cilindrada' => 'Alta',
-                  'victorias' => 8,
-                  'iddonut' => 'donut6alta',
-                ],
-                [
-                    'cilindrada' => 'Media',
-                    'victorias' => 2,
-                    'iddonut' => 'donut6media',
-                ],
-                [
-                    'cilindrada' => 'Baja',
-                    'victorias' => 0,
-                    'iddonut' => 'donut6baja',
-                ],
-              ];
+//        $datosTablaDB = [
+//            [
+//              'posicion' => 1,
+//              'marca' => 'Honda',
+//              'iddonutalta' => 'donut1alta',
+//              'iddonutmedia' => 'donut1media',                                   
+//              'iddonutbaja' => 'donut1baja'
+//            ],
+//            [
+//              'posicion' => 2,
+//              'marca' => 'Yamaha',
+//              'iddonutalta' => 'donut2alta',
+//              'iddonutmedia' => 'donut2media',                                   
+//              'iddonutbaja' => 'donut2baja'
+//            ],
+//            [
+//              'posicion' => 3,
+//              'marca' => 'Ducati',
+//              'iddonutalta' => 'donut3alta',
+//              'iddonutmedia' => 'donut3media',                                   
+//              'iddonutbaja' => 'donut3baja'
+//            ],                             
+//            [
+//              'posicion' => 4,
+//              'marca' => 'Kawasaki',
+//              'iddonutalta' => 'donut4alta',
+//              'iddonutmedia' => 'donut4media',                                   
+//              'iddonutbaja' => 'donut4baja'
+//          ],
+//          [
+//              'posicion' => 5,
+//              'marca' => 'Aprilia',
+//              'iddonutalta' => 'donut5alta',
+//              'iddonutmedia' => 'donut5media',                                   
+//              'iddonutbaja' => 'donut5baja'
+//          ],  
+//          [
+//              'posicion' => 6,
+//              'marca' => 'Suzuki',
+//              'iddonutalta' => 'donut6alta',
+//              'iddonutmedia' => 'donut6media',                                   
+//              'iddonutbaja' => 'donut6baja'
+//          ],                      
+//          ];
+//          $datosScriptDB = [
+//              [
+//                'cilindrada' => 'Alta',
+//                'victorias' => 46,
+//                'iddonut' => 'donut1alta',
+//              ],
+//              [
+//                  'cilindrada' => 'Media',
+//                  'victorias' => 37,
+//                  'iddonut' => 'donut1media',
+//              ],
+//              [
+//                  'cilindrada' => 'Baja',
+//                  'victorias' => 30,
+//                  'iddonut' => 'donut1baja',
+//              ],
+//              [
+//                  'cilindrada' => 'Alta',
+//                  'victorias' => 28,
+//                  'iddonut' => 'donut2alta',
+//                ],
+//                [
+//                    'cilindrada' => 'Media',
+//                    'victorias' => 24,
+//                    'iddonut' => 'donut2media',
+//                ],
+//                [
+//                    'cilindrada' => 'Baja',
+//                    'victorias' => 2,
+//                    'iddonut' => 'donut2baja',
+//                ],
+//                [
+//                  'cilindrada' => 'Alta',
+//                  'victorias' => 33,
+//                  'iddonut' => 'donut3alta',
+//                ],
+//                [
+//                    'cilindrada' => 'Media',
+//                    'victorias' => 0,
+//                    'iddonut' => 'donut3media',
+//                ],
+//                [
+//                    'cilindrada' => 'Baja',
+//                    'victorias' => 0,
+//                    'iddonut' => 'donut3baja',
+//                ],   
+//                [
+//                  'cilindrada' => 'Alta',
+//                  'victorias' => 14,
+//                  'iddonut' => 'donut4alta',
+//                ],
+//                [
+//                    'cilindrada' => 'Media',
+//                    'victorias' => 7,
+//                    'iddonut' => 'donut4media',
+//                ],
+//                [
+//                    'cilindrada' => 'Baja',
+//                    'victorias' => 8,
+//                    'iddonut' => 'donut4baja',
+//                ],                                               
+//                [
+//                  'cilindrada' => 'Alta',
+//                  'victorias' => 7,
+//                  'iddonut' => 'donut5alta',
+//                ],
+//                [
+//                    'cilindrada' => 'Media',
+//                    'victorias' => 18,
+//                    'iddonut' => 'donut5media',
+//                ],
+//                [
+//                    'cilindrada' => 'Baja',
+//                    'victorias' => 18,
+//                    'iddonut' => 'donut5baja',
+//                ],
+//                [
+//                  'cilindrada' => 'Alta',
+//                  'victorias' => 8,
+//                  'iddonut' => 'donut6alta',
+//                ],
+//                [
+//                    'cilindrada' => 'Media',
+//                    'victorias' => 2,
+//                    'iddonut' => 'donut6media',
+//                ],
+//                [
+//                    'cilindrada' => 'Baja',
+//                    'victorias' => 0,
+//                    'iddonut' => 'donut6baja',
+//                ],
+//              ];
         //$datosTablaDB = $em->getRepository(Rankingvelocidad::class)->findAll();
         //$datosScriptDB = $em->getRepository(Googlescriptrankingvelocidad::class)->findAll();        
+
+        $datosTablaDB = file_get_contents("https://motocampeonasrv.azurewebsites.net/api/Motocampeonas");
+        $datosTablaDB = json_decode($datosTablaDB, true);
+        dump($datosTablaDB);
+
+        $datosScriptDB = file_get_contents("https://motocampeonasgsrv.azurewebsites.net/api/Motocampeonas");
+        $datosScriptDB = json_decode($datosScriptDB, true);
+        dump($datosScriptDB);
+
         return $this->render('frontend/rankingVelocidad.html.twig',[
             'datosTabla' => $datosTablaDB,
             'datosScipt' => $datosScriptDB
@@ -196,90 +205,98 @@ class FrontendController extends AbstractController
     #[Route('/{_locale}/ranking_motocross', name: 'vistaRankingMotocross')]
     public function vistaRankingMotocross(EntityManagerInterface $em)
     {
-        $datosTablaDB = [
-            [
-              'posicion' => 1,
-              'marca' => 'KTM',
-              'iddonutalta' => 'donut1alta',                                
-              'iddonutbaja' => 'donut1baja'
-            ],
-            [
-              'posicion' => 2,
-              'marca' => 'Yamaha',
-              'iddonutalta' => 'donut2alta',                                  
-              'iddonutbaja' => 'donut2baja'
-            ],
-            [
-              'posicion' => 3,
-              'marca' => 'Honda',
-              'iddonutalta' => 'donut3alta',                              
-              'iddonutbaja' => 'donut3baja'
-            ],
-            [
-              'posicion' => 4,
-              'marca' => 'Kawasaki',
-              'iddonutalta' => 'donut4alta',                                  
-              'iddonutbaja' => 'donut4baja'
-            ],                             
-            [
-              'posicion' => 5,
-              'marca' => 'Suzuki',
-              'iddonutalta' => 'donut5alta',                                  
-              'iddonutbaja' => 'donut5baja'
-            ],                       
-          ];
-        $datosScriptDB = [
-            [
-              'cilindrada' => 'Alta',
-              'victorias' => 26,
-              'iddonut' => 'donut1alta',
-            ],
-            [
-                'cilindrada' => 'Baja',
-                'victorias' => 27,
-                'iddonut' => 'donut1baja',
-            ],
-            [
-                'cilindrada' => 'Alta',
-                'victorias' => 18,
-                'iddonut' => 'donut2alta',
-              ],
-              [
-                  'cilindrada' => 'Baja',
-                  'victorias' => 7,
-                  'iddonut' => 'donut2baja',
-              ],
-              [
-                'cilindrada' => 'Alta',
-                'victorias' => 10,
-                'iddonut' => 'donut3alta',
-              ],
-              [
-                  'cilindrada' => 'Baja',
-                  'victorias' => 1,
-                  'iddonut' => 'donut3baja',
-              ],
-              [
-                'cilindrada' => 'Alta',
-                'victorias' => 7,
-                'iddonut' => 'donut4alta',
-              ],
-              [
-                  'cilindrada' => 'Baja',
-                  'victorias' => 1,
-                  'iddonut' => 'donut4baja',
-              ],
-              [
-                'cilindrada' => 'Alta',
-                'victorias' => 1,
-                'iddonut' => 'donut5alta',
-              ],
-              [
-                  'cilindrada' => 'Baja',
-                  'victorias' => 0,
-                  'iddonut' => 'donut5baja',
-              ],                                                                 
-            ];
+//        $datosTablaDB = [
+//            [
+//              'posicion' => 1,
+//              'marca' => 'KTM',
+//              'iddonutalta' => 'donut1alta',                                
+//              'iddonutbaja' => 'donut1baja'
+//            ],
+//            [
+//              'posicion' => 2,
+//              'marca' => 'Yamaha',
+//              'iddonutalta' => 'donut2alta',                                  
+//              'iddonutbaja' => 'donut2baja'
+//            ],
+//            [
+//              'posicion' => 3,
+//              'marca' => 'Honda',
+//              'iddonutalta' => 'donut3alta',                              
+//              'iddonutbaja' => 'donut3baja'
+//            ],
+//            [
+//              'posicion' => 4,
+//              'marca' => 'Kawasaki',
+//              'iddonutalta' => 'donut4alta',                                  
+//              'iddonutbaja' => 'donut4baja'
+//            ],                             
+//            [
+//              'posicion' => 5,
+//              'marca' => 'Suzuki',
+//              'iddonutalta' => 'donut5alta',                                  
+//              'iddonutbaja' => 'donut5baja'
+//            ],                       
+//          ];
+//        $datosScriptDB = [
+//            [
+//              'cilindrada' => 'Alta',
+//              'victorias' => 26,
+//              'iddonut' => 'donut1alta',
+//            ],
+//            [
+//                'cilindrada' => 'Baja',
+//                'victorias' => 27,
+//                'iddonut' => 'donut1baja',
+//            ],
+//            [
+//                'cilindrada' => 'Alta',
+//                'victorias' => 18,
+//                'iddonut' => 'donut2alta',
+//              ],
+//              [
+//                  'cilindrada' => 'Baja',
+//                  'victorias' => 7,
+//                  'iddonut' => 'donut2baja',
+//              ],
+//              [
+//                'cilindrada' => 'Alta',
+//                'victorias' => 10,
+//                'iddonut' => 'donut3alta',
+//              ],
+//              [
+//                  'cilindrada' => 'Baja',
+//                  'victorias' => 1,
+//                  'iddonut' => 'donut3baja',
+//              ],
+//              [
+//                'cilindrada' => 'Alta',
+//                'victorias' => 7,
+//                'iddonut' => 'donut4alta',
+//              ],
+//              [
+//                  'cilindrada' => 'Baja',
+//                  'victorias' => 1,
+//                  'iddonut' => 'donut4baja',
+//              ],
+//              [
+//                'cilindrada' => 'Alta',
+//                'victorias' => 1,
+//                'iddonut' => 'donut5alta',
+//              ],
+//              [
+//                  'cilindrada' => 'Baja',
+//                  'victorias' => 0,
+//                  'iddonut' => 'donut5baja',
+//              ],                                                                 
+//            ];
+
+          $datosTablaDB = file_get_contents("https://motocampeonasrm.azurewebsites.net/api/Motocampeonas");
+          $datosTablaDB = json_decode($datosTablaDB, true);
+          dump($datosTablaDB);
+  
+          $datosScriptDB = file_get_contents("https://motocampeonasgsrm.azurewebsites.net/api/Motocampeonas");
+          $datosScriptDB = json_decode($datosScriptDB, true);
+          dump($datosScriptDB);
         //$datosTablaDB = $em->getRepository(Rankingmotocross::class)->findAll();
         //$datosScriptDB = $em->getRepository(Googlescriptrankingmotocross::class)->findAll();   
         return $this->render('frontend/rankingMotocross.html.twig',[

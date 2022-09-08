@@ -1,0 +1,13 @@
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\bin\Debug\netcoreapp2.1\MotocampeonasGSRM.deps.json
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\bin\Debug\netcoreapp2.1\MotocampeonasGSRM.runtimeconfig.json
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\bin\Debug\netcoreapp2.1\MotocampeonasGSRM.runtimeconfig.dev.json
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\bin\Debug\netcoreapp2.1\MotocampeonasGSRM.dll
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\bin\Debug\netcoreapp2.1\MotocampeonasGSRM.pdb
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.csproj.CoreCompileInputs.cache
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.RazorAssemblyInfo.cache
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.RazorAssemblyInfo.cs
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.AssemblyInfoInputs.cache
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.AssemblyInfo.cs
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.RazorTargetAssemblyInfo.cache
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.dll
+C:\Users\Mañanas\source\repos\MotocampeonasGSRM\MotocampeonasGSRM\obj\Debug\netcoreapp2.1\MotocampeonasGSRM.pdb
