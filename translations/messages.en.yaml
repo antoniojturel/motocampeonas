@@ -44,5 +44,7 @@ login1: Email
 login2: Password
 login3: Nacionality
 login4: Moto manufacturer
-accesoestadisticas: Before consulting the statistics, please
+accesoestadisticas: You do not have permission to watch this
 infomotoscomunidad: The moto manufacturers of our community are the following (draft data)
+perfilusuario: User Profile
+perfiladministrador: Admin Profile

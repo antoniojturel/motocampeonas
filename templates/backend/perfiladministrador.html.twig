@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% trans %}perfiladministrador{% endtrans %} - MotoCampeonas{% endblock %}
+{% block tituloContenido %}{% trans %}perfiladministrador{% endtrans %}{% endblock %}
+{% block subtituloContenido %}{% endblock %}
+
+{% block cookies %}{% endblock %}
+{% block cuerpocontenido %}
+   {% if is_granted('ROLE_ADMIN') %}
+
+   {% else %}
+   <div class="alert alert-danger">
+    <h1><code><center>{% trans %}accesoestadisticas{% endtrans %}</center></code></h1>
+   </div>
+   {% endif %}
+{% endblock %}

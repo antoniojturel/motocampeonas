@@ -44,5 +44,7 @@ login1: Correo electrónico
 login2: Contraseña
 login3: Nacionalidad
 login4: Marca de moto
-accesoestadisticas: Para consultar las estadísticas tiene que
+accesoestadisticas: No tiene permiso para ver esto
 infomotoscomunidad: Las marcas de moto de la comunidad MotoCampeonas son las siguientes (datos de prueba)
+perfilusuario: Perfil Usuario
+perfiladministrador: Perfil Administrador

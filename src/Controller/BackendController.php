@@ -42,6 +42,15 @@ class BackendController extends AbstractController
        // last username entered by the user
        $lastUsername = $authenticationUtils->getLastUsername(); 
 
+// FALTA CARGAR LA PLANTILLA PERFILUSUARIO CON ROLE-USER Y PERFILADMINISTRADOR CON ROLE-ADMIN
+
+      // if(){
+
+      // } 
+     //  elseif() {
+
+     //  }
+
        return $this->render('backend/login.html.twig', [
             'controller_name' => 'LoginController',
             'last_username' => $lastUsername,
