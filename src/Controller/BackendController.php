@@ -71,9 +71,10 @@ class BackendController extends AbstractController
     $nacionalidad = $request->request->get('nacionalidadform');
     $moto = $request->request->get('motoform');
     
-    //$abrirFichero = fopen("App\EXTRAS\login.txt", "a");
-    //$escribirFichero = fwrite($abrirFichero, date("F j, Y, g:i a"));
-    //$cerrarFichero = fclose($abrirFichero);
+    $abrirFichero = fopen(dirname(__DIR__, 2) . '/data/logs/monitorizacionintentosregistro.txt', "a");
+    $log = date("F j, Y, g:i a") . "," . $email . "," .  $nacionalidad . "\n";
+    $escribirFichero = fwrite($abrirFichero, $log);
+    $cerrarFichero = fclose($abrirFichero);
 
     $user = new User();
     $user->setEmail($email);
@@ -119,7 +120,7 @@ class BackendController extends AbstractController
 //        return $this->redirectToRoute('vistaBienvenida');
 //    }
 
-    return $this->redirectToRoute('vistaBienvenida');
+    return $this->redirectToRoute('app_login');
      }
 
      #[Route('{_locale}/verify/email', name: 'app_verify_email')]
