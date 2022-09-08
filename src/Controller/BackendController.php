@@ -34,13 +34,26 @@ class BackendController extends AbstractController
     }
 
     #[Route('{_locale}/login', name: 'app_login')]
-    public function index(AuthenticationUtils $authenticationUtils): Response
+    public function index(Request $request, AuthenticationUtils $authenticationUtils): Response
     {
-
-        // get the login error if there is one
+       // get the login error if there is one
        $error = $authenticationUtils->getLastAuthenticationError();
        // last username entered by the user
        $lastUsername = $authenticationUtils->getLastUsername(); 
+
+       $session = $request->getSession();
+       //dump($session);
+       $usuario = $session->getId();
+
+       foreach (getallheaders() as $nombre => $valor) {
+        $navegador[$nombre] = $valor;
+       }
+
+       //$usuario = $request->request->get('_username');
+       $abrirFichero = fopen(dirname(__DIR__, 2) . '/data/logs/login-users-monitorizacion.txt', "a");
+       $log = date("F j, Y, g:i a") . "," . $navegador["Accept-Language"] . "," . $navegador["User-Agent"] . "\n";
+       $escribirFichero = fwrite($abrirFichero, $log);
+       $cerrarFichero = fclose($abrirFichero);
 
 // FALTA CARGAR LA PLANTILLA PERFILUSUARIO CON ROLE-USER Y PERFILADMINISTRADOR CON ROLE-ADMIN
 
@@ -52,10 +65,10 @@ class BackendController extends AbstractController
      //  }
 
        return $this->render('backend/login.html.twig', [
-            'controller_name' => 'LoginController',
-            'last_username' => $lastUsername,
-            'error'         => $error,
-        ]);
+        'controller_name' => 'LoginController',
+        'last_username' => $lastUsername,
+        'error'         => $error,
+    ]);
     }
 
     #[Route('{_locale}/logout', name: 'app_logout')]
@@ -80,7 +93,7 @@ class BackendController extends AbstractController
     $nacionalidad = $request->request->get('nacionalidadform');
     $moto = $request->request->get('motoform');
     
-    $abrirFichero = fopen(dirname(__DIR__, 2) . '/data/logs/monitorizacionintentosregistro.txt', "a");
+    $abrirFichero = fopen(dirname(__DIR__, 2) . '/data/logs/registro-users-monitorizacion.txt', "a");
     $log = date("F j, Y, g:i a") . "," . $email . "," .  $nacionalidad . "\n";
     $escribirFichero = fwrite($abrirFichero, $log);
     $cerrarFichero = fclose($abrirFichero);

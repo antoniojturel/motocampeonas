@@ -190,11 +190,11 @@ class FrontendController extends AbstractController
 
         $datosTablaDB = file_get_contents("https://motocampeonasrv.azurewebsites.net/api/Motocampeonas");
         $datosTablaDB = json_decode($datosTablaDB, true);
-        dump($datosTablaDB);
+        //dump($datosTablaDB);
 
         $datosScriptDB = file_get_contents("https://motocampeonasgsrv.azurewebsites.net/api/Motocampeonas");
         $datosScriptDB = json_decode($datosScriptDB, true);
-        dump($datosScriptDB);
+        //dump($datosScriptDB);
 
         return $this->render('frontend/rankingVelocidad.html.twig',[
             'datosTabla' => $datosTablaDB,
@@ -292,11 +292,11 @@ class FrontendController extends AbstractController
 
           $datosTablaDB = file_get_contents("https://motocampeonasrm.azurewebsites.net/api/Motocampeonas");
           $datosTablaDB = json_decode($datosTablaDB, true);
-          dump($datosTablaDB);
+          //dump($datosTablaDB);
   
           $datosScriptDB = file_get_contents("https://motocampeonasgsrm.azurewebsites.net/api/Motocampeonas");
           $datosScriptDB = json_decode($datosScriptDB, true);
-          dump($datosScriptDB);
+          //dump($datosScriptDB);
         //$datosTablaDB = $em->getRepository(Rankingmotocross::class)->findAll();
         //$datosScriptDB = $em->getRepository(Googlescriptrankingmotocross::class)->findAll();   
         return $this->render('frontend/rankingMotocross.html.twig',[

@@ -27,6 +27,7 @@ Las herramientas y tecnologías que se han usado son las siguientes:
 - Los estilos **[CSS](https://es.wikipedia.org/wiki/CSS)** y el refuerzo del frontend con **[JavaScript](https://es.wikipedia.org/wiki/JavaScript)**, **[Bootstrap](https://getbootstrap.com/)** y **[jQuery](https://jquery.com/)**. A través de la tecnología de Red de Distribución de Contenidos (**[CDN](https://es.wikipedia.org/wiki/Red_de_distribuci%C3%B3n_de_contenidos)**).
 - Control de cambios en local con **[Git](https://git-scm.com/)** y gestión del proyecto con sus backups online en los repositorios de **[Github](https://github.com/)** y **[Gitlab](https://gitlab.com/)**.
 - Despliegue en la **[nube de tipo PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service)** a través de **[Platform.sh](https://platform.sh/)**.
+- Desarrollo de APIs **[.NET](https://docs.microsoft.com/es-es/dotnet/)** para su despliegue en la nube de Microsoft, **[Azure](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-azure/)** y su consumo en formato **[.JSON](https://es.wikipedia.org/wiki/JSON)**.
 
 # 5. [4] Pasos de instalación/configuración en local
 
