@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-07-2022 a las 12:02:41
+-- Tiempo de generación: 02-12-2023 a las 21:31:36
 -- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -141,7 +141,16 @@ INSERT INTO `fechas` (`ID_FECHA`) VALUES
 (2018),
 (2019),
 (2020),
-(2021);
+(2021),
+(2022),
+(2023),
+(2024),
+(2025),
+(2026),
+(2027),
+(2028),
+(2029),
+(2030);
 
 -- --------------------------------------------------------
 
@@ -160,6 +169,7 @@ CREATE TABLE `marcas` (
 
 INSERT INTO `marcas` (`ID_MARCA`, `ID_PAIS`) VALUES
 ('Kalex', 'Alemania'),
+('GasGas', 'Austria'),
 ('KTM', 'Austria'),
 ('Derbi', 'España'),
 ('JJ Cobas', 'España'),
@@ -238,10 +248,10 @@ CREATE TABLE `usuarios` (
 
 CREATE TABLE `victorias` (
   `ID_VICTORIA` int(11) NOT NULL,
-  `ID_CATEGORIA` varchar(15) DEFAULT NULL,
-  `ID_CLASIFICACION` varchar(15) DEFAULT NULL,
-  `ID_FECHA` int(11) DEFAULT NULL,
-  `ID_MARCA` varchar(10) DEFAULT NULL
+  `ID_CATEGORIA` varchar(15) NOT NULL,
+  `ID_CLASIFICACION` varchar(15) NOT NULL,
+  `ID_FECHA` int(11) NOT NULL,
+  `ID_MARCA` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -694,21 +704,43 @@ INSERT INTO `victorias` (`ID_VICTORIA`, `ID_CATEGORIA`, `ID_CLASIFICACION`, `ID_
 (601, 'MXGP', 'Constructores', 2021, 'KTM'),
 (602, 'MXGP', 'Pilotos', 2021, 'KTM'),
 (603, 'MX2', 'Constructores', 2021, 'Yamaha'),
-(604, 'MX2', 'Pilotos', 2021, 'Yamaha');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `votos`
---
-
-CREATE TABLE `votos` (
-  `ID_VOTO` int(11) NOT NULL,
-  `ID_CATEGORIA` varchar(15) NOT NULL,
-  `ID_CLASIFICACION` varchar(15) NOT NULL,
-  `ID_MARCA` varchar(10) NOT NULL,
-  `ID_FECHA` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+(604, 'MX2', 'Pilotos', 2021, 'Yamaha'),
+(605, 'WorldSBK', 'Constructores', 2022, 'Ducati'),
+(606, 'WorldSBK', 'Pilotos', 2022, 'Ducati'),
+(607, 'WorldSSP', 'Constructores', 2022, 'Yamaha'),
+(608, 'WorldSSP', 'Pilotos', 2022, 'Yamaha'),
+(617, 'WorldSBK', 'Constructores', 2023, 'Ducati'),
+(618, 'WorldSBK', 'Pilotos', 2023, 'Ducati'),
+(619, 'WorldSSP', 'Constructores', 2023, 'Ducati'),
+(625, 'WorldSSP', 'Pilotos', 2023, 'Ducati'),
+(626, 'WorldSSP300', 'Constructores', 2022, 'Yamaha'),
+(627, 'WorldSSP300', 'Pilotos', 2022, 'Yamaha'),
+(628, 'WorldSSP300', 'Constructores', 2023, 'Kawasaki'),
+(629, 'WorldSSP300', 'Pilotos', 2023, 'Kawasaki'),
+(642, 'MotoGP', 'Constructores', 2023, 'Ducati'),
+(643, 'MotoGP', 'Pilotos', 2023, 'Ducati'),
+(644, 'MotoGP', 'Constructores', 2022, 'Ducati'),
+(645, 'MotoGP', 'Pilotos', 2022, 'Ducati'),
+(646, 'Moto2', 'Constructores', 2023, 'Kalex'),
+(647, 'Moto2', 'Pilotos', 2023, 'KTM'),
+(648, 'Moto2', 'Constructores', 2022, 'Kalex'),
+(649, 'Moto2', 'Pilotos', 2022, 'KTM'),
+(650, 'Moto3', 'Constructores', 2023, 'KTM'),
+(651, 'Moto3', 'Pilotos', 2023, 'Honda'),
+(652, 'Moto3', 'Constructores', 2022, 'GasGas'),
+(653, 'Moto3', 'Pilotos', 2022, 'GasGas'),
+(654, 'WMX', 'Constructores', 2023, 'Kawasaki'),
+(655, 'WMX', 'Pilotos', 2023, 'Kawasaki'),
+(656, 'WMX', 'Constructores', 2022, 'Yamaha'),
+(657, 'WMX', 'Pilotos', 2022, 'Yamaha'),
+(658, 'MXGP', 'Constructores', 2022, 'Yamaha'),
+(659, 'MXGP', 'Pilotos', 2022, 'Honda'),
+(660, 'MXGP', 'Constructores', 2023, 'Yamaha'),
+(661, 'MXGP', 'Pilotos', 2023, 'GasGas'),
+(662, 'MX2', 'Constructores', 2023, 'Yamaha'),
+(663, 'MX2', 'Pilotos', 2023, 'KTM'),
+(664, 'MX2', 'Constructores', 2022, 'Yamaha'),
+(665, 'MX2', 'Pilotos', 2022, 'KTM');
 
 --
 -- Índices para tablas volcadas
@@ -777,21 +809,10 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `victorias`
   ADD PRIMARY KEY (`ID_VICTORIA`),
-  ADD UNIQUE KEY `ID_VICTORIA` (`ID_VICTORIA`),
   ADD KEY `ID_MARCA` (`ID_MARCA`),
   ADD KEY `ID_CATEGORIA` (`ID_CATEGORIA`),
   ADD KEY `ID_FECHA` (`ID_FECHA`),
   ADD KEY `ID_CLASIFICACION` (`ID_CLASIFICACION`);
-
---
--- Indices de la tabla `votos`
---
-ALTER TABLE `votos`
-  ADD PRIMARY KEY (`ID_VOTO`),
-  ADD KEY `ID_CATEGORIA` (`ID_CATEGORIA`),
-  ADD KEY `ID_CLASIFICACION` (`ID_CLASIFICACION`),
-  ADD KEY `ID_MARCA` (`ID_MARCA`),
-  ADD KEY `ID_FECHA` (`ID_FECHA`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -807,13 +828,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `victorias`
 --
 ALTER TABLE `victorias`
-  MODIFY `ID_VICTORIA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=605;
-
---
--- AUTO_INCREMENT de la tabla `votos`
---
-ALTER TABLE `votos`
-  MODIFY `ID_VOTO` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_VICTORIA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=666;
 
 --
 -- Restricciones para tablas volcadas
@@ -849,15 +864,6 @@ ALTER TABLE `victorias`
   ADD CONSTRAINT `victorias_ibfk_2` FOREIGN KEY (`ID_CATEGORIA`) REFERENCES `categorias` (`ID_CATEGORIA`),
   ADD CONSTRAINT `victorias_ibfk_3` FOREIGN KEY (`ID_FECHA`) REFERENCES `fechas` (`ID_FECHA`),
   ADD CONSTRAINT `victorias_ibfk_4` FOREIGN KEY (`ID_CLASIFICACION`) REFERENCES `clasificaciones` (`ID_CLASIFICACION`);
-
---
--- Filtros para la tabla `votos`
---
-ALTER TABLE `votos`
-  ADD CONSTRAINT `votos_ibfk_1` FOREIGN KEY (`ID_CATEGORIA`) REFERENCES `categorias` (`ID_CATEGORIA`),
-  ADD CONSTRAINT `votos_ibfk_2` FOREIGN KEY (`ID_CLASIFICACION`) REFERENCES `clasificaciones` (`ID_CLASIFICACION`),
-  ADD CONSTRAINT `votos_ibfk_3` FOREIGN KEY (`ID_MARCA`) REFERENCES `marcas` (`ID_MARCA`),
-  ADD CONSTRAINT `votos_ibfk_4` FOREIGN KEY (`ID_FECHA`) REFERENCES `fechas` (`ID_FECHA`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

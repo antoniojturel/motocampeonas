@@ -78,7 +78,16 @@ INSERT INTO `fechas` (`ID_FECHA`) VALUES
 (2018),
 (2019),
 (2020),
-(2021);
+(2021),
+(2022),
+(2023),
+(2024),
+(2025),
+(2026),
+(2027),
+(2028),
+(2029),
+(2030);
 
 INSERT INTO `fechas` (1949);
 INSERT INTO `fechas` (1988);
@@ -115,9 +124,19 @@ INSERT INTO `fechas` (2018);
 INSERT INTO `fechas` (2019);
 INSERT INTO `fechas` (2020);
 INSERT INTO `fechas` (2021);
+INSERT INTO `fechas` (2022);
+INSERT INTO `fechas` (2023);
+INSERT INTO `fechas` (2024);
+INSERT INTO `fechas` (2025);
+INSERT INTO `fechas` (2026);
+INSERT INTO `fechas` (2027);
+INSERT INTO `fechas` (2028);
+INSERT INTO `fechas` (2029);
+INSERT INTO `fechas` (2030);
 
 INSERT INTO `marcas` (`ID_MARCA`, `ID_PAIS`) VALUES
 ('Kalex', 'Alemania'),
+('GasGas', 'Austria'),
 ('KTM', 'Austria'),
 ('Derbi', 'España'),
 ('JJ Cobas', 'España'),
@@ -133,6 +152,7 @@ INSERT INTO `marcas` (`ID_MARCA`, `ID_PAIS`) VALUES
 ('Suter', 'Suiza');
 
 INSERT INTO `marcas` ('Kalex', 'Alemania');
+INSERT INTO `marcas` ('GasGas', 'Austria');
 INSERT INTO `marcas` ('KTM', 'Austria');
 INSERT INTO `marcas` ('Derbi', 'España');
 INSERT INTO `marcas` ('JJ Cobas', 'España');
@@ -616,6 +636,42 @@ INSERT INTO `victorias` (`ID_VICTORIA`, `ID_CATEGORIA`, `ID_CLASIFICACION`, `ID_
 (602, 'MXGP', 'Pilotos', 2021, 'KTM'),
 (603, 'MX2', 'Constructores', 2021, 'Yamaha'),
 (604, 'MX2', 'Pilotos', 2021, 'Yamaha');
+(605, 'WorldSBK', 'Constructores', 2022, 'Ducati'),
+(606, 'WorldSBK', 'Pilotos', 2022, 'Ducati'),
+(607, 'WorldSSP', 'Constructores', 2022, 'Yamaha'),
+(608, 'WorldSSP', 'Pilotos', 2022, 'Yamaha'),
+(617, 'WorldSBK', 'Constructores', 2023, 'Ducati'),
+(618, 'WorldSBK', 'Pilotos', 2023, 'Ducati'),
+(619, 'WorldSSP', 'Constructores', 2023, 'Ducati'),
+(625, 'WorldSSP', 'Pilotos', 2023, 'Ducati'),
+(626, 'WorldSSP300', 'Constructores', 2022, 'Yamaha'),
+(627, 'WorldSSP300', 'Pilotos', 2022, 'Yamaha'),
+(628, 'WorldSSP300', 'Constructores', 2023, 'Kawasaki'),
+(629, 'WorldSSP300', 'Pilotos', 2023, 'Kawasaki'),
+(642, 'MotoGP', 'Constructores', 2023, 'Ducati'),
+(643, 'MotoGP', 'Pilotos', 2023, 'Ducati'),
+(644, 'MotoGP', 'Constructores', 2022, 'Ducati'),
+(645, 'MotoGP', 'Pilotos', 2022, 'Ducati'),
+(646, 'Moto2', 'Constructores', 2023, 'Kalex'),
+(647, 'Moto2', 'Pilotos', 2023, 'KTM'),
+(648, 'Moto2', 'Constructores', 2022, 'Kalex'),
+(649, 'Moto2', 'Pilotos', 2022, 'KTM'),
+(650, 'Moto3', 'Constructores', 2023, 'KTM'),
+(651, 'Moto3', 'Pilotos', 2023, 'Honda'),
+(652, 'Moto3', 'Constructores', 2022, 'GasGas'),
+(653, 'Moto3', 'Pilotos', 2022, 'GasGas'),
+(654, 'WMX', 'Constructores', 2023, 'Kawasaki'),
+(655, 'WMX', 'Pilotos', 2023, 'Kawasaki'),
+(656, 'WMX', 'Constructores', 2022, 'Yamaha'),
+(657, 'WMX', 'Pilotos', 2022, 'Yamaha'),
+(658, 'MXGP', 'Constructores', 2022, 'Yamaha'),
+(659, 'MXGP', 'Pilotos', 2022, 'Honda'),
+(660, 'MXGP', 'Constructores', 2023, 'Yamaha'),
+(661, 'MXGP', 'Pilotos', 2023, 'GasGas'),
+(662, 'MX2', 'Constructores', 2023, 'Yamaha'),
+(663, 'MX2', 'Pilotos', 2023, 'KTM'),
+(664, 'MX2', 'Constructores', 2022, 'Yamaha'),
+(665, 'MX2', 'Pilotos', 2022, 'KTM');
 
 INSERT INTO `victorias` (1, 'WorldSBK', 'Pilotos',2021, 'Yamaha');
 INSERT INTO `victorias` (2, 'WorldSBK', 'Pilotos',2020, 'Kawasaki');
@@ -1063,4 +1119,39 @@ INSERT INTO `victorias` (601, 'MXGP', 'Constructores',2021, 'KTM');
 INSERT INTO `victorias` (602, 'MXGP', 'Pilotos',2021, 'KTM');
 INSERT INTO `victorias` (603, 'MX2', 'Constructores',2021, 'Yamaha');
 INSERT INTO `victorias` (604, 'MX2', 'Pilotos',2021, 'Yamaha');
-
+INSERT INTO `victorias` (605, 'WorldSBK', 'Constructores', 2022, 'Ducati');
+INSERT INTO `victorias` (606, 'WorldSBK', 'Pilotos', 2022, 'Ducati');
+INSERT INTO `victorias` (607, 'WorldSSP', 'Constructores', 2022, 'Yamaha');
+INSERT INTO `victorias` (608, 'WorldSSP', 'Pilotos', 2022, 'Yamaha');
+INSERT INTO `victorias` (617, 'WorldSBK', 'Constructores', 2023, 'Ducati');
+INSERT INTO `victorias` (618, 'WorldSBK', 'Pilotos', 2023, 'Ducati');
+INSERT INTO `victorias` (619, 'WorldSSP', 'Constructores', 2023, 'Ducati');
+INSERT INTO `victorias` (625, 'WorldSSP', 'Pilotos', 2023, 'Ducati');
+INSERT INTO `victorias` (626, 'WorldSSP300', 'Constructores', 2022, 'Yamaha');
+INSERT INTO `victorias` (627, 'WorldSSP300', 'Pilotos', 2022, 'Yamaha');
+INSERT INTO `victorias` (628, 'WorldSSP300', 'Constructores', 2023, 'Kawasaki');
+INSERT INTO `victorias` (629, 'WorldSSP300', 'Pilotos', 2023, 'Kawasaki');
+INSERT INTO `victorias` (642, 'MotoGP', 'Constructores', 2023, 'Ducati');
+INSERT INTO `victorias` (643, 'MotoGP', 'Pilotos', 2023, 'Ducati');
+INSERT INTO `victorias` (644, 'MotoGP', 'Constructores', 2022, 'Ducati');
+INSERT INTO `victorias` (645, 'MotoGP', 'Pilotos', 2022, 'Ducati');
+INSERT INTO `victorias` (646, 'Moto2', 'Constructores', 2023, 'Kalex');
+INSERT INTO `victorias` (647, 'Moto2', 'Pilotos', 2023, 'KTM');
+INSERT INTO `victorias` (648, 'Moto2', 'Constructores', 2022, 'Kalex');
+INSERT INTO `victorias` (649, 'Moto2', 'Pilotos', 2022, 'KTM');
+INSERT INTO `victorias` (650, 'Moto3', 'Constructores', 2023, 'KTM');
+INSERT INTO `victorias` (651, 'Moto3', 'Pilotos', 2023, 'Honda');
+INSERT INTO `victorias` (652, 'Moto3', 'Constructores', 2022, 'GasGas');
+INSERT INTO `victorias` (653, 'Moto3', 'Pilotos', 2022, 'GasGas');
+INSERT INTO `victorias` (654, 'WMX', 'Constructores', 2023, 'Kawasaki');
+INSERT INTO `victorias` (655, 'WMX', 'Pilotos', 2023, 'Kawasaki');
+INSERT INTO `victorias` (656, 'WMX', 'Constructores', 2022, 'Yamaha');
+INSERT INTO `victorias` (657, 'WMX', 'Pilotos', 2022, 'Yamaha');
+INSERT INTO `victorias` (658, 'MXGP', 'Constructores', 2022, 'Yamaha');
+INSERT INTO `victorias` (659, 'MXGP', 'Pilotos', 2022, 'Honda');
+INSERT INTO `victorias` (660, 'MXGP', 'Constructores', 2023, 'Yamaha');
+INSERT INTO `victorias` (661, 'MXGP', 'Pilotos', 2023, 'GasGas');
+INSERT INTO `victorias` (662, 'MX2', 'Constructores', 2023, 'Yamaha');
+INSERT INTO `victorias` (663, 'MX2', 'Pilotos', 2023, 'KTM');
+INSERT INTO `victorias` (664, 'MX2', 'Constructores', 2022, 'Yamaha');
+INSERT INTO `victorias` (665, 'MX2', 'Pilotos', 2022, 'KTM');
